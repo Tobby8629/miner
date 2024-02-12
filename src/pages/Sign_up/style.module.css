@@ -1,22 +1,283 @@
 .main {
-  padding: 1rem;
-  background: rgba(255, 0, 0, 0.252);
+  padding: 2rem 1.3rem;
+  background: url('../../../public/assets/bg.jpg');
+  background-position: center;
+  background-size: cover;
+  color: rgb(223, 223, 223);
+  
 }
 
 .welcome_text {
-  font-size: 12px;
+  font-size: 14px;
   margin: 0;
-  line-height: 20px;
+  line-height: 24px;
   margin: 1rem 0;
 }
 
 .large_text {
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .form {
-  background: white;
+  background: rgb(240, 238, 238);
   padding: 1rem;
-  margin: 1rem 0;
+  padding-bottom: 2rem;
+  margin: 2rem 0;
   border-radius: 8px;
+  color: black;
+}
+
+.reg {
+  text-align: center;
+  margin: 1rem 0;
+  display: none;
+}
+
+.reg h2 {
+  margin: .5rem 0;
+  font-size: 16px;
+}
+
+.reg p {
+  font-size: 10px;
+}
+
+.form label {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.input_wrapper {
+  margin: 1rem 0;
+}
+
+.email,
+.password {
+  display: flex;
+  margin-top: .5rem;
+  border: 1px solid rgba(128, 128, 128, 0.499);
+  padding: .5rem;
+  border-radius: 5px;
+}
+
+.email input,
+.password input{
+ border: none;
+ outline: none;
+ margin-left: .5rem;
+ width: 100%;
+ text-transform: capitalize;
+ background: rgb(240, 238, 238);
+}
+
+.password input {
+  margin-left: 0;
+}
+
+.terms {
+ display: flex;
+ align-items: center;
+ font-size: 11px;
+ margin: 1.2rem 0;
+ line-height: 17px
+}
+
+.terms input {
+  margin-right: .5rem;
+  height: 30px;
+  width: 30px;
+  outline: none;
+}
+
+.terms a {
+   color: rgb(90, 155, 233);
+   font-weight: 500;
+}
+
+.submit,
+.forget_password {
+  margin-bottom: 1.2rem;
+}
+
+.submit button {
+  background: linear-gradient(to right, rgb(90, 155, 233), rgb(177, 210, 243));
+  border: none;
+  outline: none;
+  padding: .5rem;
+  height: 35px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  width: 100%;
+}
+
+.forget_password {
+text-align: center;
+}
+
+.forget_password a,
+.exist a {
+  color: rgb(90, 155, 233);
+  font-size: 12px;
+}
+
+.exist {
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .main {
+    min-height: calc(100vh - 60px);
+    padding: 8% 0;
+  }
+
+  .form {
+    width: 55%;
+    margin: 0 auto;
+  }
+
+  .reg {
+    display: block;
+    margin: 1.2rem 0;
+  }
+
+  .reg h2 {
+    margin: .5rem 0;
+    font-size: 20px;
+  }
+  
+  .reg p {
+    font-size: 12px;
+  }
+  .wrapper {
+    width: 98%;
+    margin: 0 auto;
+  }
+ 
+  .welcome_text {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+  .welcome_text .large_text {
+    font-size: 40px;
+  }
+
+  .submit {
+    width: 40%;
+    margin: 1rem auto;
+  }
+
+  .form input {
+    font-size: 12px;
+  }
+
+  .input_wrapper {
+    margin: 1.2rem 0;
+  }
+
+  .userInfo {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 1.2rem 0;
+  }
+
+  .userInfo .input_wrapper {
+    width: 48%;
+    margin: 0;
+  }
+  .options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+
+  }
+
+  .forget_password {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+    padding: 3% 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form {
+    width: 42%;
+    margin: 0;
+    height: fit-content;
+  }
+
+  .signin {
+    width: 33%;
+  }
+
+  .signin .options {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .signin .options .forget_password {
+    margin: .5rem 0;
+  }
+
+  .welcome_text {
+    width: 45%;
+    font-size: 25px;
+    line-height: 35px;
+    background-color: rgba(52, 52, 52, 0.648);
+    border-radius: 10px;
+    padding: 4rem 2rem ;
+    height: fit-content;
+    margin: 0;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .welcome_text .large_text {
+    font-size: 50px;
+  }
+
+  .submit {
+    width: 60%;
+  }
+
+  .submit button {
+    font-size: 14px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 1280px) {
+  
+  .main {
+    padding: 10% 0;
+  }
+
+  .form label {
+    font-size: 16px;
+  }
+
+  .form input {
+    font-size: 14px;
+  }
+
+  .forget_password a,
+  .terms,
+  .exist a {
+    font-size: 14px;
+  }
+
+  .terms {
+    line-height: 22px ;
+  }
 }

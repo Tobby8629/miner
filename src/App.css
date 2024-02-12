@@ -8,5 +8,14 @@
 
 body {
   margin-top: 60px;
-  font-family: 'Montserrat', sans-serif;;
+  font-family: 'Montserrat', sans-serif;
+}
+
+input,
+button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
