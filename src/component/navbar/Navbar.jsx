@@ -46,7 +46,7 @@ const Navbar = () => {
        <div className={`${styles.nav_menu} ${toogle ? styles.nav_show : ''}`}>
         <div className={styles.links}>
           {Links.map((link)=>(
-          <Link to={link?.link} key={link?.name}>{link?.name}</Link>
+          <Link to={link?.link} onClick={()=> settoogle(false)} key={link?.name}>{link?.name}</Link>
           ))}
         </div>
         <Link className={styles.profile}>
