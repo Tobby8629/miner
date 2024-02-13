@@ -22,11 +22,20 @@ const Navbar = () => {
       }
     });
   }, []);
+  const openbar = () => {
+    settoogle(!toogle);
+    if (!toogle) {
+      setunik(true);
+    } else {
+      setunik(false);
+    }
+  };
+  
 
 
   return (
     <nav className={`${styles.nav} ${unik ? styles.unique : ''}`}>
-     <div className={styles.nav_toogle} onClick={()=>settoogle(!toogle)}>
+     <div className={styles.nav_toogle} onClick={openbar}>
         {toogle? <FontAwesomeIcon icon={faTimes} /> :  <FontAwesomeIcon icon={faBars} />}
        </div> 
        <div className={styles.nav_logo}>
