@@ -1,0 +1,46 @@
+
+.footer {
+  background-image: url('../../../public/assets/body-bg.png');
+  /* background-color: aliceblue; */
+  background-color: aliceblue;
+  background-position: center;
+  background-size: contain;
+  color: rgba(28, 126, 201, 0.836);
+}
+
+.main {
+   width: 90%;
+   margin: 0 auto;
+   padding: 3rem 0;
+}
+
+.main p {
+  text-align: center;
+  font-size: 13px;
+}
+
+.text,
+.reserve,
+.comp{
+  margin-bottom: .5rem;
+  line-height: 18px;
+}
+
+@media (min-width: 768px) {
+  .main {
+    width:65% ;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+    width:45% ;
+  }
+
+  .text,
+.reserve,
+.comp{
+  margin-bottom: .5rem;
+  line-height: 21px;
+}
+}
