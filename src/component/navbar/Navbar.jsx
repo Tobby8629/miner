@@ -1,24 +1,37 @@
 import { faBars, faTimes, faUserAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './styles.module.css'
 
 const Navbar = () => {
   const [toogle, settoogle] = useState(false)
+  const [unik, setunik] = useState(false)
   const Links = [
     {name: 'Home', link: "/"},
     {name: 'About', link:"/about"},
     {name: 'Contact', link: "/contact"},
+    {name: 'signup', link: "/registration"}
   ]
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY >= 20) {
+        setunik(true);
+      } else {
+        setunik(false);
+      }
+    });
+  }, []);
+
+
   return (
-    <nav className={styles.nav}>
+    <nav className={`${styles.nav} ${unik ? styles.unique : ''}`}>
      <div className={styles.nav_toogle} onClick={()=>settoogle(!toogle)}>
         {toogle? <FontAwesomeIcon icon={faTimes} /> :  <FontAwesomeIcon icon={faBars} />}
        </div> 
        <div className={styles.nav_logo}>
         <Link to="/">
-         <h1>LOGO</h1>
+         <h1>Crypto Gland.</h1>
         </Link>
        </div>
        <div className={`${styles.nav_menu} ${toogle ? styles.nav_show : ''}`}>

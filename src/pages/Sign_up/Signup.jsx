@@ -1,11 +1,18 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './style.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faEye, faEyeSlash, faUser } from '@fortawesome/free-solid-svg-icons'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom';
 
 const Signup = () => {
+  const location = useLocation();
+  const [register,setregister] = useState({first_name: '', last_name: '',email: '', password:''})
+  useEffect(() => {
+    const {state} = location
+    state ? setregister({...register, email: state}) : setregister({...register, email:""})
+  },[location])
   const [visible, setvisible] = useState(false)
+  console.log(register)
   return (
     <section className={styles.main}>
         <h2 className={styles.welcome_text}> <span className={styles.large_text}>Welcome!</span><br/> It looks like you're new here.<br/> Would you like to create an account?</h2>
@@ -42,7 +49,7 @@ const Signup = () => {
                 <div>
                   <FontAwesomeIcon icon={faEnvelope}/>
                 </div>
-                <input type='email' id='email' placeholder='please enter email address' />
+                <input type='email' value={register?.email} id='email' placeholder='please enter email address' />
               </div>
             </div>
             <div className={styles.input_wrapper}>
