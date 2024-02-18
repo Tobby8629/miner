@@ -5,8 +5,20 @@ import Signup from './pages/Sign_up/Signup';
 import Navbar from './component/navbar/Navbar';
 import Footer from './component/footer/Footer';
 import Home from './pages/Home/Home';
+import {useDispatch, useSelector } from 'react-redux'
+import { useEffect } from 'react';
+import { cryptoFetch } from './Redux/CryptoMarket/Crypto';
 
 function App() {
+  const dispatch = useDispatch()
+  useEffect(() => {
+    const getCoins = async () => {
+    dispatch(cryptoFetch())
+    }
+    getCoins()
+  },[dispatch])
+  const coins = useSelector((state)=> state?.cryptoFetch?.cryptofetch)
+  console.log(coins)
   return (
     <>
     <Navbar />

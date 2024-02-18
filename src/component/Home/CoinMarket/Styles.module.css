@@ -1,0 +1,89 @@
+.market {
+  color: white;
+  padding: 2rem 1rem;
+}
+
+.coin {
+ width: 100%;
+ margin-bottom: 2rem;
+ 
+}
+
+.each_coin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.coin_name {
+  display: flex;
+  align-items: center;
+}
+
+.text_name h3 {
+  margin: .3rem 0;
+}
+
+.text_name h3:nth-child(2){
+  font-size: 12px;
+  opacity: 0.7;
+  font-weight: 300;
+}
+
+.price p {
+  margin: .3rem 0;
+  font-weight: 700;
+}
+
+.wrapper h1 {
+  margin: 1.3rem 0;
+}
+
+.lead_header {
+  text-transform: capitalize;
+  position: relative;
+  margin: 1rem;
+  margin-left: 15px;
+}
+
+.lead_header::before {
+  content: "";
+  height: 100%;
+  width: 5px;
+  background-color: rgb(28, 126, 201);
+  position: absolute;
+  left: -15px;
+}
+
+
+@media (min-width: 768px) {
+  
+ .coin {
+    border: 1px solid rgb(186, 182, 182);
+    border-radius: 8px;
+    padding: 0 1rem;
+  }
+
+  .wrapper h1 {
+    margin: 1.3rem 0;
+    font-size: 28px;
+    text-transform: capitalize;
+  }
+
+  .lead_header {
+   font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .market {
+    padding:  1rem 3rem;
+  }
+  .wrapper h1 {
+    font-size: 32px;
+    margin: 3rem 0;
+    font-weight: 700;
+  }
+}
+

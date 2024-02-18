@@ -14,6 +14,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 9;
 }
 
 .profile {
@@ -22,7 +23,7 @@
 
 .nav_toogle {
   font-size: 30px;
-  color: rgba(28, 126, 201, 0.725);
+  color: rgb(28, 126, 201);
 }
 
 .nav_logo a {
@@ -75,7 +76,7 @@
 
 .unique a,
 .unique .nav_menu a {
-  color: rgba(28, 126, 201, 0.725);
+  color: rgb(28, 126, 201);
 }
 
 @media (min-width: 768px) {
