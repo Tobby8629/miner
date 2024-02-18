@@ -11,7 +11,12 @@ const Benefit = () => {
     <section>
         <h2>Why Choose Crypto Gland?</h2>
         <div>
-        
+          {benefit?.map((benefit)=>(
+            <div key={benefit?.title}>
+              <h3>{benefit?.title}</h3>
+              <p>{benefit?.details}</p>
+            </div>
+          ))}
         </div>
     </section>
   )

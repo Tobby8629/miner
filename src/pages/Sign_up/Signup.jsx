@@ -12,7 +12,7 @@ const Signup = () => {
     state ? setregister({...register, email: state}) : setregister({...register, email:""})
   },[location,register])
   const [visible, setvisible] = useState(false)
-  console.log(register)
+
   return (
     <section className={styles.main}>
         <h2 className={styles.welcome_text}> <span className={styles.large_text}>Welcome!</span><br/> It looks like you're new here.<br/> Would you like to create an account?</h2>

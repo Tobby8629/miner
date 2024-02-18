@@ -42,10 +42,13 @@
   left: -100%;
 }
 
-.nav_show .links {
+.nav_menu .links {
   display: flex;
   flex-direction: column;
   padding: 2.5rem 0;
+}
+
+.nav_show .links {
   animation: menuSlide var(--timer) ease forwards; 
 }
 
@@ -104,7 +107,8 @@
   }
 
   .nav_menu .links {
-    margin-right: 1.8rem;
+    margin-right: 3rem;
+    flex-direction: row;
   }
 
   .nav_menu  a {
