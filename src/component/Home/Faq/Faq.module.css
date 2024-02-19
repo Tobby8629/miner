@@ -1,0 +1,38 @@
+.faq {
+    background-color: rgb(233, 229, 229);
+   padding: 2rem 1rem;
+}
+
+.faq_wrap {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1rem .5rem;
+  background-color: rgb(241, 240, 238);
+  position: relative;
+}
+
+.faq_top h4 {
+  font-size: 13px;
+}
+
+.faq_wrap p {
+    font-size: 11px;
+    margin: .5rem 0;
+    line-height: 20px;
+  }
+
+.faq label input {
+ opacity: 0;
+ height: 0;
+ width: 0;
+ display: none;
+}
+
+.faq_top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq label h4 {
+  font-size: 13px;
+}

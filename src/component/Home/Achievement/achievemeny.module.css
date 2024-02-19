@@ -61,8 +61,8 @@
 
        .text {
         text-transform: capitalize;
-        font-size: 18px;
-        font-weight: 600;
+        font-size: 17px;
+        font-weight: 500;
       }
        
        .text {
@@ -88,5 +88,9 @@
       .achieve {
         font-size: 45px;
         font-weight: 800;
+      }
+
+      .text {
+        font-size: 19px;
       }
 }

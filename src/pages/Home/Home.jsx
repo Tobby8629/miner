@@ -4,6 +4,7 @@ import CoinMarket from '../../component/Home/CoinMarket/CoinMarket';
 import Plans from '../../component/Home/MiningPlans/Plans';
 import Benefit from '../../component/Home/Benefits/Benefit';
 import Achievement from '../../component/Home/Achievement/Achievement';
+import Faq from '../../component/Home/Faq/Faq';
 
 
 const Home = () => {
@@ -12,8 +13,9 @@ const Home = () => {
       <Header />
       <Achievement />
       <CoinMarket />
-      <Plans />
       <Benefit />
+      <Plans />
+      <Faq />
     </section>
   );
 };
