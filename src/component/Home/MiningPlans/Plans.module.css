@@ -1,0 +1,58 @@
+.plans {
+  padding: 1rem;
+  color: white;
+}
+
+.each {
+  margin: 1.4rem 0;
+  padding: 1rem;
+  box-shadow: 0px 0px 5px 2px rgb(163, 142, 19);
+  border-radius: 7px;
+}
+
+.each h2 {
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+.each p {
+  font-size: 14px;
+}
+
+.amount {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 1rem;
+  color: rgb(195, 169, 23);
+}
+
+@media (min-width: 768px) {
+.lead_text {
+  margin: 1.5rem 0;
+  font-size: 38px;
+}
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .wrapper .each {
+    width: 48%;
+    padding: 2rem 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .plans {
+    padding: 3rem;
+  }
+
+  .wrapper .each {
+    width: 23%;
+  }
+}
+
+

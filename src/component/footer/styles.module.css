@@ -1,11 +1,11 @@
 
 .footer {
   background-image: url('../../../public/assets/body-bg.png');
+  background-color: rgb(18, 26, 86);
   /* background-color: aliceblue; */
-  background-color: aliceblue;
   background-position: center;
   background-size: contain;
-  color: rgba(28, 126, 201, 0.836);
+  color: rgb(195, 169, 23);
 }
 
 .main {

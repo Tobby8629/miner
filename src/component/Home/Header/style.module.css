@@ -46,7 +46,8 @@
 
   .button button {
     font-weight: 500;
-    background-color: rgba(28, 126, 201, 0.725);
+    /* background-color: rgba(28, 126, 201, 0.725); */
+    background-color: rgb(195, 169, 23);
     color: white;
   }
 

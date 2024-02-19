@@ -52,7 +52,8 @@
   content: "";
   height: 100%;
   width: 5px;
-  background-color: rgb(28, 126, 201);
+  /* background-color: rgb(28, 126, 201); */
+  background-color: rgb(195, 169, 23);
   position: absolute;
   left: -15px;
 }

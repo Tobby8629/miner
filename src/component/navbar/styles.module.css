@@ -23,7 +23,8 @@
 
 .nav_toogle {
   font-size: 30px;
-  color: rgb(28, 126, 201);
+  /* color: rgb(28, 126, 201); */
+  color: rgb(248, 215, 27);
 }
 
 .nav_logo a {
@@ -40,6 +41,10 @@
   top: 60px;
   transition: 0.3s linear all;
   left: -100%;
+}
+
+.nav_logo a h1 {
+  color: rgb(195, 169, 23);
 }
 
 .nav_menu .links {
@@ -73,13 +78,14 @@
 }
 
 .unique {
-  /* background-color: rgb(6, 21, 34); */
-  background-color: aliceblue;
+  background-color: rgb(18, 26, 86)
+  /* background-color: aliceblue; */
 }
 
 .unique a,
 .unique .nav_menu a {
-  color: rgb(28, 126, 201);
+  /* color: rgb(28, 126, 201); */
+  color: rgb(195, 169, 23);
 }
 
 @media (min-width: 768px) {

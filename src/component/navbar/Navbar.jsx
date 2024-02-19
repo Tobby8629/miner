@@ -40,7 +40,7 @@ const Navbar = () => {
        </div> 
        <div className={styles.nav_logo}>
         <Link to="/">
-         <h1>Crypto Gland.</h1>
+         <h1>Crypto Gland <span className='dot'></span></h1>
         </Link>
        </div>
        <div className={`${styles.nav_menu} ${toogle ? styles.nav_show : ''}`}>

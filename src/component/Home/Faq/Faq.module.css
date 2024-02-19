@@ -36,3 +36,13 @@
 .faq label h4 {
   font-size: 13px;
 }
+
+@media (min-width: 1024px) {
+  .faq {
+    padding: 2rem 3rem;
+  }
+
+  .faq h3{
+    font-size: 30px;
+  }
+}

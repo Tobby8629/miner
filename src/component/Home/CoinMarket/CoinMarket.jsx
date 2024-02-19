@@ -31,7 +31,7 @@ const CoinMarket = () => {
   return (
     <section className={styles.market}> 
         <div className={styles.wrapper}>
-            <h1>Crypto Market Today</h1>
+            <h1>Crypto Market Today <span className='dot'></span></h1>
             <Swiper
               modules={[ Pagination ]}
               spaceBetween={50}
