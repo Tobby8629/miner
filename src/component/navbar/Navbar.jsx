@@ -10,7 +10,7 @@ const Navbar = () => {
   const Links = [
     {name: 'Home', link: "/"},
     {name: 'About', link:"/about"},
-    {name: 'Contact', link: "/contact"},
+    {name: 'How it works', link: "/works"},
     {name: 'signup', link: "/registration"}
   ]
   useEffect(() => {
@@ -30,8 +30,6 @@ const Navbar = () => {
       setunik(false);
     }
   };
-  
-
 
   return (
     <nav className={`${styles.nav} ${unik ? styles.unique : ''}`}>
@@ -40,7 +38,7 @@ const Navbar = () => {
        </div> 
        <div className={styles.nav_logo}>
         <Link to="/">
-         <h1>Crypto Gland <span className='dot'></span></h1>
+         <h1>Crypto Gland <span className={`dot ${unik ?'white' : null}`}></span></h1>
         </Link>
        </div>
        <div className={`${styles.nav_menu} ${toogle ? styles.nav_show : ''}`}>

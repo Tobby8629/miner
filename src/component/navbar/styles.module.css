@@ -85,7 +85,7 @@
 .unique a,
 .unique .nav_menu a {
   /* color: rgb(28, 126, 201); */
-  color: rgb(195, 169, 23);
+  color: white;
 }
 
 @media (min-width: 768px) {
@@ -120,7 +120,7 @@
   .nav_menu  a {
     /* color: rgba(28, 126, 201, 0.725); */
     color: white;
-    margin-right: .5rem;
+    margin-right: 1rem;
     margin-bottom: 0;
     animation: none;
     font-size: 16px;

@@ -1,0 +1,108 @@
+.header {
+    background-image:  linear-gradient(to right, rgb(8, 8, 38), #181d258c), url('../../../../public/assets/work.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    color: white;
+    padding: 0 1rem;
+    padding-top: 60px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+  .headerText {
+    color: white;
+  }
+
+  .header p {
+    text-align: center;
+    margin: 1rem 0;
+    line-height: 25px;
+    font-weight: 300;
+  }
+
+  .header .small {
+    margin-top: 0;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .button button {
+    padding: .5rem;
+    background:  rgb(195, 169, 23);
+    border: none;
+    outline: none;
+    padding: .8rem 2rem;
+  }
+
+  .button button a {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+  }
+
+
+
+
+@media (min-width: 768px) {
+  .header {
+    height: 50vh;
+  }
+
+  .main {
+    width: 70%;
+    margin: auto;
+  }
+
+  .headerText {
+    font-size: 23px 
+  }
+
+  .header p {
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 200;
+  }
+
+  .header .small {
+    font-size: 16px;
+  }
+
+  /* .button button {
+    width: 50%;
+    margin: 0rem auto;
+  } */
+
+}
+
+
+@media (min-width: 1024px) {
+  .header {
+    height: 85vh;
+  }
+
+  .main {
+    width: 40%;
+  }
+
+
+  .headerText {
+    font-size: 28px 
+  }
+
+  .header .small {
+    font-size: 22px;
+  }
+
+  .header p { 
+    margin: 1.5rem 0;
+  }
+
+
+}
