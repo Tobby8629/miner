@@ -31,8 +31,7 @@
    width: 90%;
   }
 
-  .button input,
-  .button button {
+  .button input {
     border: none;
     outline: none;
     padding: .5rem 1rem;
@@ -44,12 +43,7 @@
     border-radius: 0;
   }
 
-  .button button {
-    font-weight: 500;
-    /* background-color: rgba(28, 126, 201, 0.725); */
-    background-color: rgb(195, 169, 23);
-    color: white;
-  }
+ 
 
   @media (min-width: 768px) {
 

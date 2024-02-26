@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styles from './style.module.css'
 import { useNavigate } from 'react-router-dom';
+import Button from '../../button/Button';
 
 const Header = () => {
   const [email, setEmail] = useState('');
@@ -20,7 +21,7 @@ const Header = () => {
         </div>
         <form onSubmit={navigate} className={styles.button}>
           <input type='email' placeholder='Enter your email address' value={email} onChange={handleEmailChange} />
-          <button> Get Started</button>
+          <Button />
         </form>
       </header>
   )

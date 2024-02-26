@@ -9,8 +9,12 @@ const Signup = () => {
   const [register,setregister] = useState({first_name: '', last_name: '',email: '', password:''})
   useEffect(() => {
     const {state} = location
-    state ? setregister({...register, email: state}) : setregister({...register, email:""})
-  },[location,register])
+    console.log(state)
+    setregister(prevRegister => ({
+      ...prevRegister,
+      email: state ?? ""
+    }));
+  },[location])
   const [visible, setvisible] = useState(false)
 
   return (
