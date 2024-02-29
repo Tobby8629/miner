@@ -9,6 +9,7 @@ import {useDispatch, useSelector } from 'react-redux'
 import { useEffect } from 'react';
 import { cryptoFetch } from './Redux/CryptoMarket/Crypto';
 import HowItWorks from './pages/How_it_works/HowItWorks';
+import About from './pages/About/About';
 
 function App() {
   const dispatch = useDispatch()
@@ -27,6 +28,7 @@ function App() {
       <Route path='/registration' element={<Signup />} />
       <Route path='/login' element={<Signin />} />
       <Route path='/' element={<Home />} />
+      <Route path='about' element={<About />} />
       <Route path='works' element={<HowItWorks />} />
     </Routes>
     <Footer />
