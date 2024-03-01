@@ -143,17 +143,30 @@
 }
 
 @media (min-width: 1440px) {
-  .about {
-    padding: 6rem 16rem;
+  .aboutUs {
+    width: 100%;
+    margin: 0 auto;
   }
 
-  /* .about h1 {
-    font-size: 25px;
-  } */
+  .aboutUs h1 {
+    font-size: 30px;
+  }
+
+  .about,
+  .ourMission,
+  .whyUs {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+  .about {
+    padding: 6rem 22vw;
+  }
 
   .about p {
-    font-size: 20px;
-    line-height: 38px;
+    font-size: 25px;
+    line-height: 40px;
   }
 
   .ourMission {
@@ -161,7 +174,7 @@
   }
 
   .ourMission p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 33px;
   }
 
@@ -175,7 +188,7 @@
 
   .whyUs ul li {
     padding: 2rem 2rem;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 33px;
   }
 
@@ -183,8 +196,8 @@
     padding: 6rem 10rem;
   }
 
-  .getStarted p{
-    font-size: 18px;
+  .getStarted p {
+    font-size: 20px;
     line-height: 33px;
   }
 }
