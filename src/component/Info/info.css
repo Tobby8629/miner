@@ -93,9 +93,18 @@
     padding: 3rem 4rem;
   }
 
+  .whyUs ul {
+    /* display: flex;
+    flex-direction: column; */
+    width: 100%;
+  }
+
   .whyUs ul li {
-    padding: 2rem 2rem;
-    line-height: 25px;
+    /* padding: 2rem 2rem;
+    line-height: 25px; */
+    display: inline-block;
+    width: 43%;
+    /* height: 25vh; */
   }
 
   .getStarted {

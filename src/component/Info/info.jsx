@@ -25,7 +25,8 @@ const info = () => {
         <ul>
           <li>
             <b>User-Focused Experience:</b> We prioritize user experience and strive to make our
-            platform intuitive and easy to use for investors of all levels.
+            platform intuitive and easy to use for investors of all levels. So feel free to explore
+            every feature.
           </li>
           <li>
             <b>Security First:</b> The security of your assets is our top priority. We employ
@@ -33,7 +34,7 @@ const info = () => {
           </li>
           <li>
             <b>Transparency:</b> We believe in transparency and provide our users with access to real-time data,
-            market insights, and comprehensive investment analytics.
+            up-to-date market insights, and comprehensive investment analytics.
           </li>
           <li>
             <b>Diverse Investment Options:</b> From Bitcoin and Ethereum to emerging altcoins, we offer a
