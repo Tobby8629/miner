@@ -17,10 +17,6 @@
   z-index: 9;
 }
 
-.profile {
-  display: none;
-}
-
 .nav_toogle {
   font-size: 30px;
   /* color: rgb(28, 126, 201); */
@@ -36,16 +32,20 @@
   position: absolute;
   background-color: rgba(30, 67, 145, 0.464);
   backdrop-filter: blur(10px);
-  height: 100vh;
+  height: calc(100vh - 60px);
   width: 100%;
   top: 60px;
   transition: 0.3s linear all;
   left: -100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .nav_logo a h1 {
   color: white;
 }
+
 
 .nav_menu .links {
   display: flex;
@@ -92,6 +92,32 @@
   color: white;
 }
 
+.btn {
+  background: transparent;
+  outline: none;
+  border: 1px solid gold;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 2rem; 
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gold;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.unique .profile {
+  margin-bottom: 0;
+}
+
+.initials {
+  margin-right: .5rem;
+}
+
 @media (min-width: 768px) {
   .nav {
     display: flex;
@@ -130,14 +156,10 @@
     font-size: 16px;
   }
 
-  .profile {
-    display: flex;
-    align-items: center;
-   
-  }
-
-  .initials {
-    margin-right: .5rem;
+  .btn {
+    border: none;
+    padding: 0;
+    margin: 0;
   }
 }
 

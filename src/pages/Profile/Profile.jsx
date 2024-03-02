@@ -1,11 +1,12 @@
 import React from 'react'
 import style from './Profile.module.css'
+import Sidebar from '../../component/Account/sidebar/Sidebar'
 
 const Profile = () => {
   return (
     <section className={style.profile}>
        <div className={style.wrapper}>
-         <h1>Welcome Back Lucas</h1>
+         <Sidebar />
        </div>
     </section>
   )
