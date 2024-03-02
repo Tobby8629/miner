@@ -41,8 +41,16 @@ a {
   display: inline-block;
 }
 
+.gold {
+  color: rgb(184, 165, 61); 
+}
+
 .white {
   background-color: white;
+}
+
+.text-white {
+  color: white;
 }
 
 .dot1 {

@@ -62,7 +62,7 @@
   .each {
     display: flex;
     align-items: center;
-    width: 48%;
+    width: 49%;
   }
 
   .image {
@@ -73,6 +73,7 @@
 
   .text {
     width: 65%;
+    font-size: 14px;
   }
 
   /* .image img {
@@ -81,6 +82,9 @@
 }
 
 @media (min-width: 1200px) {
+    .image {
+      width: 30%;
+    }
 
     .each h3 {
         font-size: 24px;
@@ -89,5 +93,9 @@
     .each p {
         font-size: 18px;
         line-height: 30px;
+    }
+
+    .text {
+      font-size: 18px;
     }
 }

@@ -11,7 +11,7 @@
 
 @media (min-width: 768px) {
   .detail {
-    padding: 2rem 3rem
+    padding: 2rem 3rem;
   }
 
   .detail h2 {
@@ -29,5 +29,18 @@
     margin: 1rem 0;
     font-size: 18px;
     line-height: 34px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .detail {
+    padding: 2rem 5rem;
+  }
+
+  .detail p {
+    margin: 1rem 0;
+    font-size: 22px;
+    line-height: 42px;
+    width: 95%;
   }
 }

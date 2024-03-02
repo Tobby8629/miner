@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
         <div className={styles.header_text}>
-          <h2><span className={styles.bold}>Unlock digital wealth</span><br/> with Crypto Gland.</h2>
+          <h2><span className={styles.bold}>Unlock <span className='gold'>digital wealth</span></span><br/> with Crypto Gland.</h2>
           <p>Crypto Gland: Your trusted partner for cryptocurrency investments, empowering global financial goals and achieving freedom through expert guidance.</p>
         </div>
         <form onSubmit={navigate} className={styles.button}>

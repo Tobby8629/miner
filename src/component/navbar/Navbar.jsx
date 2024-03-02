@@ -36,7 +36,7 @@ const Navbar = () => {
      <div className={styles.nav_toogle} onClick={openbar}>
         {toogle? <FontAwesomeIcon icon={faTimes} /> :  <FontAwesomeIcon icon={faBars} />}
        </div> 
-       <div className={styles.nav_logo}>
+       <div className={`${styles.nav_logo} ${unik ? styles.gold : ''}`}>
         <Link to="/">
          <h1>Crypto Gland <span className={`dot ${unik ?'white' : null}`}></span></h1>
         </Link>

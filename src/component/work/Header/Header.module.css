@@ -1,5 +1,5 @@
 .header {
-    background-image:  linear-gradient(to right, rgb(8, 8, 38), #181d258c), url('../../../../public/assets/work.jpg');
+    background-image:  linear-gradient(to right, rgb(1, 1, 8), #0b0d0f8c), url('../../../../public/assets/work.jpg');
     background-size: cover;
     background-position: center;
     height: 60vh;
@@ -45,6 +45,7 @@
     text-align: center;
     color: white;
     font-size: 16px;
+    text-transform: capitalize;
   }
 
 
@@ -74,35 +75,66 @@
     font-size: 16px;
   }
 
-  /* .button button {
-    width: 50%;
-    margin: 0rem auto;
-  } */
+  .button button {
+    padding: 1rem 2.3rem;
+  }
+
+  .button button a {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
 
 }
 
 
 @media (min-width: 1024px) {
   .header {
-    height: 85vh;
+    height: 90vh;
   }
 
   .main {
-    width: 40%;
+    width: 45%;
   }
 
 
   .headerText {
-    font-size: 28px 
+    font-size: 33px; 
   }
 
   .header .small {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .header p { 
     margin: 1.5rem 0;
+    font-size: 20px;
+    line-height: 33px;
   }
 
+}
+
+@media (min-width: 1280px) {
+
+  .main {
+    width: 50%;
+  }
+
+
+  .headerText {
+    font-size: 45px 
+  }
+
+  .header .small {
+    font-size: 28px;
+    line-height: 41px;
+  }
+
+  .header p { 
+    font-size: 28px;
+    line-height: 41px;
+  }
 
 }

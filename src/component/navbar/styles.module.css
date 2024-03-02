@@ -44,7 +44,7 @@
 }
 
 .nav_logo a h1 {
-  color: rgb(195, 169, 23);
+  color: white;
 }
 
 .nav_menu .links {
@@ -62,6 +62,10 @@
   font-size: 22px;
   margin-bottom: 1.2rem;
   font-weight: 500;
+}
+
+.gold a h1 {
+  color: gold;
 }
 
 @keyframes menuSlide {
@@ -140,5 +144,15 @@
 @media (min-width: 1024px) {
   .nav {
     padding: 0 3rem;
+  }
+
+  .nav_menu  a {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .nav {
+    padding: 0 5rem;
   }
 }
