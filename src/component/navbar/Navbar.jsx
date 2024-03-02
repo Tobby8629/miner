@@ -47,7 +47,7 @@ const Navbar = () => {
           <Link to={link?.link} onClick={()=> settoogle(false)} key={link?.name}>{link?.name}</Link>
           ))}
         </div>
-        <Link className={styles.profile}>
+        <Link className={styles.profile} to='/account'>
           <span className={styles.initials}>
             <FontAwesomeIcon icon={faUserAlt} />
           </span>

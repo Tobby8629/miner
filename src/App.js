@@ -10,6 +10,7 @@ import { useEffect } from 'react';
 import { cryptoFetch } from './Redux/CryptoMarket/Crypto';
 import HowItWorks from './pages/How_it_works/HowItWorks';
 import About from './pages/About/About';
+import Profile from './pages/Profile/Profile';
 
 function App() {
   const dispatch = useDispatch()
@@ -30,6 +31,7 @@ function App() {
       <Route path='/' element={<Home />} />
       <Route path='about' element={<About />} />
       <Route path='works' element={<HowItWorks />} />
+      <Route path='account' element={<Profile />} />
     </Routes>
     <Footer />
    </>
