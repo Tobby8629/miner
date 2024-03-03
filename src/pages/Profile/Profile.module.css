@@ -1,11 +1,24 @@
 .wrapper {
   background-color: rgb(233, 229, 229);
   margin-top: 60px;
- 
 }
 
 @media (min-width: 768px ) {
   .wrapper {
      padding: 1rem; 
+     display: flex;
+  }
+
+  .tab_wrapper {
+    width: 70%;
+    padding: 0 2rem;
+  }
+
+
+}
+
+@media (min-width: 1280px) {
+  .tab_wrapper {
+    width: 80%;
   }
 }

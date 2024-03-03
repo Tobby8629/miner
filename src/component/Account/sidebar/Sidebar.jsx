@@ -4,10 +4,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 
-const Sidebar = () => {
+const Sidebar = ({setactivetab}) => {
   const [toggle, settoggle] = useState(false)
   const openbar = () => settoggle(true)
   const closebar = () => settoggle(false)
+  const activateTab = (tab) => {
+    setactivetab(tab)
+    closebar()
+  }
   return (
     <section className={style.sidebar}>
       <div className={style.nav_toogle} onClick={openbar}>
@@ -18,11 +22,11 @@ const Sidebar = () => {
             <FontAwesomeIcon icon={faTimes} onClick={closebar}/> 
         </div>
         <ul>
-          <li>Dashboard</li>
-          <li>Invest</li>
-          <li>Deposit funds</li>
-          <li>Withdrawals</li>
-          <li>logout</li>
+          <li onClick={()=>activateTab("dashboard")}>Dashboard</li>
+          <li onClick={()=>activateTab("invest")}>Invest</li>
+          <li onClick={()=>activateTab("deposit")}>Deposit funds</li>
+          <li onClick={()=>activateTab("withdrawals")}>Withdrawals</li>
+          <li onClick={()=>activateTab()}>logout</li>
         </ul>
         <button>
             <Link to='/'>Back to Homepage</Link>
