@@ -48,6 +48,7 @@ function Faq() {
 
   return (
    <section className={styles.faq}>
+    <div className={styles.wrapper}>  
     <h3>Frequently asked questions</h3>
     <div className={styles.faq_wrapper}>
       {tray.map((e,index)=>(
@@ -59,6 +60,7 @@ function Faq() {
           {e.open ? <p>{e.answer}</p> : null}
         </div>
       ))}
+    </div>
     </div>
    </section>
   )

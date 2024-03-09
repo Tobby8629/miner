@@ -69,12 +69,12 @@
 
   .sidebar {
     width: 30%;
-    /* background-color: #fff; */
+    position: fixed;
     background-color: rgb(18, 26, 86);
     background-image: url('../../../../public/assets/body-bg.png');
     border-radius: 10px;
     height: calc(90vh - 60px);
-
+    margin: 2rem 0;
   }
 
   .nav_tray {
@@ -86,7 +86,7 @@
   }
 
   .nav_tray ul {
-    padding: 2rem 0;
+    padding: 1rem 0;
   }
 
   .nav_tray li {

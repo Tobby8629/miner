@@ -1,12 +1,14 @@
 import React from 'react'
 import styles from './Benefit.module.css'
 import { benefit } from '../../Helpers/Helpers'
+import pointing from '../../../util/testings.png'
 
 const Benefit = () => {
   return (
     <section className={styles.benefit}>
-        <h2 className={styles.header_text}>Why Choose Crypto Gland?</h2>
         <div className={styles.flex}>
+          <div className={styles.text}>
+          <h2 className={styles.header_text}>Why Choose Crypto Gland?</h2>
           <div className={styles.benefits}>
             {benefit?.map((benefit)=>(
               <div key={benefit?.title} className={styles.each_benefit}>
@@ -15,8 +17,9 @@ const Benefit = () => {
               </div>
             ))}
           </div>
+          </div>
           <div className={styles.img}>
-            <p>Picture</p>
+            <img src={pointing} alt='point' />
           </div>
         </div>
     </section>

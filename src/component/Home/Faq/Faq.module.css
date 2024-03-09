@@ -38,11 +38,36 @@
 }
 
 @media (min-width: 1024px) {
+
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+
   .faq {
     padding: 2rem 3rem;
   }
 
   .faq h3{
-    font-size: 30px;
+    font-size: 40px;
+  }
+
+  .faq_top h4 {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  
+  .faq_wrap p {
+      font-size: 16px;
+      margin: 1rem 0;
+      line-height: 30px;
+    }
+}
+
+@media (min-width: 1280px) {
+  .wrapper {
+    width: 70%;
+    margin: 0 auto;
   }
 }
+

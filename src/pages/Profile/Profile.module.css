@@ -1,6 +1,7 @@
 .wrapper {
   background-color: rgb(233, 229, 229);
   margin-top: 60px;
+  min-height: calc(100vh - 60px);
 }
 
 @media (min-width: 768px ) {
@@ -10,7 +11,8 @@
   }
 
   .tab_wrapper {
-    width: 70%;
+    width: calc(100% - 30%);
+    margin-left: auto;
     padding: 0 2rem;
   }
 
@@ -19,6 +21,7 @@
 
 @media (min-width: 1280px) {
   .tab_wrapper {
-    width: 80%;
+    width: calc(100% - 20%);
+    margin-left: auto;
   }
 }

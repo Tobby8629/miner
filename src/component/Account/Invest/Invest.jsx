@@ -1,8 +1,12 @@
 import React from 'react'
+import Plans from '../../Home/MiningPlans/Plans'
 
 const Invest = () => {
   return (
-    <div>Invest</div>
+    <section>
+      <h2>Our Investment Plans <span className='dot'></span></h2>
+      <Plans />
+    </section>
   )
 }
 

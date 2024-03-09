@@ -52,6 +52,7 @@ function App() {
   
   
   const coins = useSelector((state)=> state?.cryptoFetch?.cryptofetch)
+  const hideFooter = (location.pathname === '/account')
   console.log(hideNavbar)
   
   
@@ -66,7 +67,7 @@ function App() {
       <Route path='works' element={<HowItWorks />} />
       <Route path='account' element={<Profile />} />
     </Routes>
-    <Footer />
+    {!hideFooter && <Footer />}
    </>
   );}
 

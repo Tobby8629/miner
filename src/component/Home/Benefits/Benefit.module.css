@@ -1,6 +1,7 @@
 .benefit {
     background-color: rgb(233, 229, 229);
-    padding: 1rem
+    padding: 1rem;
+    overflow: hidden;
 }
 
 .header_text {
@@ -66,17 +67,23 @@
 
   .benefit {
     padding: 1rem 3rem;
+    overflow: hidden;
   }
 
   .flex {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .text {
+    width: 60%;
   }
 
   .benefits {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 60%;
     /* justify-content: space-between; */
   }
 
@@ -88,13 +95,32 @@
     line-height: 22px;
     font-size: 12px;
   }
+
+  
+.img {
+  display: block;
+  width: 38%;
+}
+
+.img img {
+  width: 100%;
+}
+
 }
 
 
 @media (min-width: 1280px) {
 
+  .benefits {
+    justify-content: unset;
+  }
+
   .each_benefit {
     height: 250px;
+  }
+
+  .img {
+    margin-left: 2rem;
   }
   
   .each_benefit h3 {
