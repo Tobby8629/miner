@@ -1,5 +1,6 @@
 .dashboard {
   padding: 2rem 1rem;
+  transition: 1s linear all;
 }
 
 .box {
@@ -12,6 +13,12 @@
   border-radius: 7px;
   margin: 1rem 0;
 }
+
+.dashboard h1 {
+  font-size: 30px;
+}
+
+
 
 .boximg {
   height: 100%;
@@ -41,10 +48,96 @@
   text-align: left;
 }
 
+.referral {
+  background-color: #fff;
+  padding: 0 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  border-radius: 7px;
+}
+
+.referral h2 {
+  border-bottom: 1px solid gray;
+  padding: 1rem 0;
+}
+
+.copylink {
+  padding: 1rem 0;
+}
+
+.copylink p {
+  line-height: 25px;
+  margin-bottom: 1rem;
+  word-wrap: break-word;
+}
+
+.copylink button {
+  padding: 1rem;
+  border: none;
+  outline: none;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  display: flex;
+  color: #fff;
+}
+
+.copylink button span {
+  display: block;
+  margin-left: .3rem;
+} 
+
+.returns {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 7px;
+  margin: 1rem 0;
+}
+
+.returns h2 {
+  padding: 1.2rem 0;
+  border-bottom: 1px solid gray;
+}
+
+.table_wrapper {
+  max-width: 100%; 
+  overflow-x: auto;
+}
+
+.returns table {
+  min-width: 580px;
+  border-collapse: collapse;
+}
+
+.returns table thead tr {
+  text-transform: capitalize;
+  border-bottom: .5px solid gray;
+}
+
+.returns table th {
+  padding: 1rem 0;
+}
+
+
 @media (min-width: 768px) {
 
   .dashboard {
     padding: 2rem 0;
+  }
+
+  .dashboard h1 {
+    height: 110px;
+    position: fixed;
+    z-index: 9;
+    background: var(--bg);
+    width: 100%;
+    top: 60px;
+    line-height: 120px;
+    font-size: 42px;
+    padding: .5rem 0;
+  }
+
+  .box_wrapper {
+    margin-top: 4rem
   }
 
   .box{
@@ -60,6 +153,20 @@
 
   .name {
     font-size: 1rem;
+  }
+
+  .referral,
+  .returns {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .copylink button {
+    font-size: 16px;
+  }
+
+  .returns table {
+    width: 100%;
   }
   
 }
@@ -84,17 +191,24 @@
   .name {
     font-size: 1rem;
   }
+
+  .referral,
+  .returns {
+    width: 100%;
+  }
+
+  .copylink button {
+    font-size: 14px;
+  }
+  
 }
 
 @media (min-width: 1280px) {
 
-  .dashboard {
-    width: calc(100% - 20%);
-  }
-
   .box {
     width: calc(33.3% - .8rem);
     margin-right: .8rem;
+    height: 160px;
   }
 
   .price {

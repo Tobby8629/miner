@@ -1,0 +1,104 @@
+.invest {
+  padding: 2rem 1rem;
+}
+
+.invest h1 {
+  font-size: 30px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.card p {
+ margin: .5rem 0;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  margin: .5rem 0;
+  width: fit-content;
+  border: 1px solid var(--primary-color);
+}
+
+.invest h2 {
+  font-size: 18px;
+}
+
+.sign {
+   border-left: 1px solid var(--primary-color);
+}
+
+.currency {
+  border-right: 1px solid var(--primary-color);
+}
+
+.input input {
+  outline: none;
+  border: none;
+  padding: .5rem;
+}
+
+.card .input p {
+  padding: .5rem;
+  margin: 0;
+}
+
+.btn {
+  width: 80%;
+  margin: .5em auto;
+}
+
+.invest button {
+  background: var(--primary-color);
+  outline: none;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .invest h1 {
+        height: 110px;
+        position: fixed;
+        z-index: 9;
+        background: var(--bg);
+        width: 100%;
+        top: 60px;
+        line-height: 120px;
+        font-size: 42px;
+        padding: .5rem 0;
+      }
+
+  .invest h2 {
+    font-size: 14px;
+  }
+
+  .card {
+    width: 85%;
+    margin: .5rem auto;
+  }
+
+  .invest main {
+    display: flex;
+      flex-wrap: wrap;
+      margin-top: 7rem
+  }
+}
+
+@media (min-width: 1000px) {
+    .card {
+        width: 48%;
+        margin: .5rem auto;
+        }
+}

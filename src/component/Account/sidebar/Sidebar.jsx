@@ -8,7 +8,7 @@ const Sidebar = ({setactivetab}) => {
   const [toggle, settoggle] = useState(false)
   const openbar = () => settoggle(true)
   const closebar = () => settoggle(false)
-  const activateTab = (tab) => {
+  const activateTab = (tab,e) => {
     setactivetab(tab)
     closebar()
   }
@@ -22,11 +22,11 @@ const Sidebar = ({setactivetab}) => {
             <FontAwesomeIcon icon={faTimes} onClick={closebar}/> 
         </div>
         <ul>
-          <li onClick={()=>activateTab("dashboard")}>Dashboard</li>
-          <li onClick={()=>activateTab("invest")}>Invest</li>
-          <li onClick={()=>activateTab("deposit")}>Deposit funds</li>
-          <li onClick={()=>activateTab("withdrawals")}>Withdrawals</li>
-          <li onClick={()=>activateTab()}>logout</li>
+          <li onClick={(e)=>activateTab("dashboard",e)}>Dashboard</li>
+          <li onClick={(e)=>activateTab("invest",e)}>Invest</li>
+          <li onClick={(e)=>activateTab("deposit",e)}>Deposit funds</li>
+          <li onClick={(e)=>activateTab("withdrawals",e)}>Withdrawals</li>
+          <li onClick={(e)=>activateTab()}>logout</li>
         </ul>
         <button>
             <Link to='/'>Back to Homepage</Link>
