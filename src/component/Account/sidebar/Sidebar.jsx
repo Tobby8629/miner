@@ -14,8 +14,8 @@ const Sidebar = ({setactivetab}) => {
   }
   return (
     <section className={style.sidebar}>
-      <div className={style.flex}>
-        <h2>Crypto Gland <span className='dot'></span></h2>
+        <div className={style.flex}>
+          <h2>Crypto Gland <span className='dot'></span></h2>
         </div>
         <div className={style.nav_toogle} onClick={openbar}>
           <FontAwesomeIcon icon={faBars} />

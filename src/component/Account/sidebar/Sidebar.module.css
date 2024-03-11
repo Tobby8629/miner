@@ -74,7 +74,8 @@
 
 @media (min-width: 768px) {
   .nav_toogle,
-  .X {
+  .X,
+  .flex {
     display: none;
   }
 
