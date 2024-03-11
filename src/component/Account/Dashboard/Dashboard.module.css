@@ -18,8 +18,6 @@
   font-size: 30px;
 }
 
-
-
 .boximg {
   height: 100%;
 }
@@ -130,14 +128,15 @@
     z-index: 9;
     background: var(--bg);
     width: 100%;
-    top: 60px;
-    line-height: 120px;
+    top: 96px;
+    line-height: 122px;
     font-size: 42px;
-    padding: .5rem 0;
+    padding: .7rem 0;
+    border-bottom: 2px solid var(--primary-color);
   }
 
   .box_wrapper {
-    margin-top: 4rem
+    margin-top: 5rem
   }
 
   .box{

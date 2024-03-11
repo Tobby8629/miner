@@ -48,8 +48,8 @@ function Faq() {
 
   return (
    <section className={styles.faq}>
-    <div className={styles.wrapper}>  
     <h3>Frequently asked questions</h3>
+    <div className={styles.wrapper}>  
     <div className={styles.faq_wrapper}>
       {tray.map((e,index)=>(
         <div className={styles.faq_wrap} key={e.id}  onClick={()=>opentray(e.id)}>

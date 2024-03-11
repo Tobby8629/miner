@@ -8,12 +8,13 @@
   .wrapper {
      padding: 1rem; 
      display: flex;
+     margin-top: 96px;
   }
 
   .tab_wrapper {
     width: calc(100% - 30%);
     margin-left: auto;
-    padding: 0 2rem;
+    padding-left: 2rem;
   }
 
 

@@ -11,25 +11,38 @@
   padding: 1rem;
   margin: 1rem 0;
   border-radius: 5px;
- display: flex;
- flex-direction: column;
- align-items: center;
 }
 
 .card p {
- margin: .5rem 0;
+ padding: 1rem 0;
+ border-bottom: .3px solid var(--primary-color);
+ text-align: center;
 }
 
 .input {
   display: flex;
   align-items: center;
   margin: .5rem 0;
-  width: fit-content;
+  width: 100%;
   border: 1px solid var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.card .duration {
+  border-bottom: none;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 .invest h2 {
   font-size: 18px;
+}
+
+.input_wrapper {
+  width: 80%;
+  margin: auto;
 }
 
 .sign {
@@ -44,6 +57,7 @@
   outline: none;
   border: none;
   padding: .5rem;
+  width: 80%;
 }
 
 .card .input p {
@@ -68,37 +82,68 @@
 }
 
 @media (min-width: 768px) {
+
+  .invest {
+    padding: 2rem 0;
+  }
+
     .invest h1 {
-        height: 110px;
-        position: fixed;
-        z-index: 9;
-        background: var(--bg);
-        width: 100%;
-        top: 60px;
-        line-height: 120px;
-        font-size: 42px;
-        padding: .5rem 0;
-      }
+      height: 110px;
+      position: fixed;
+      z-index: 9;
+      background: var(--bg);
+      width: 100%;
+      top: 60px;
+      top: 96px;
+      line-height: 122px;
+      font-size: 42px;
+      padding: .7rem 0;
+      border-bottom: 2px solid var(--primary-color);
+    }
 
   .invest h2 {
     font-size: 14px;
+    text-align: center;
   }
 
   .card {
     width: 85%;
-    margin: .5rem auto;
   }
 
   .invest main {
     display: flex;
       flex-wrap: wrap;
-      margin-top: 7rem
+      margin-top: 5rem
   }
 }
 
 @media (min-width: 1000px) {
-    .card {
-        width: 48%;
-        margin: .5rem auto;
-        }
+.card {
+    width: 47%;
+    margin-right: 1rem;
+    padding: 2rem 0;
+  }
+
+    .invest h2 {
+      font-size: 17px;
+      text-align: center;
+    }
+}
+
+@media (min-width:1280px) {
+  .invest {
+    padding: 4rem 0;
+  }
+
+  .card {
+    width: 23%;
+    margin-right: .8rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .card {
+    width: 24%;
+    margin-right: 0.8rem;
+  }
 }
