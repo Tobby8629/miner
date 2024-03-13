@@ -59,10 +59,10 @@ const info = () => {
 
       <div className="contactUs">
         <h1>Contact Us <span className='dot'></span></h1>
-        <form className="contactForm" action="https://formspree.io/" method="POST">
-          <input className="name" type="text" placeholder="Name" maxLength="30" required/>
-          <input className="mail" type="email" placeholder="Email" required/>
-          <textarea className="message" placeholder="Message" required></textarea>
+        <form className="contactForm" action="https://formspree.io/f/xjvnozaj" method="POST">
+          <input className="name" type="text" name="name" placeholder="Name" maxLength="30" required/>
+          <input className="mail" type="email" name="email" placeholder="Email" required/>
+          <textarea className="message" placeholder="Message" name="message" required></textarea>
           <button className="submit" type="submit">Submit</button>
         </form>
       </div>
