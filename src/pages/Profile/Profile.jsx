@@ -5,6 +5,7 @@ import Dashboard from '../../component/Account/Dashboard/Dashboard'
 import Invest from '../../component/Account/Invest/Invest'
 import Deposit from '../../component/Account/Deposit/Deposit'
 import Withdrawals from '../../component/Account/withdrawals/Withdrawals'
+import { Outlet } from 'react-router-dom'
 
 const Profile = () => {
   const [activetab, setactivetab] = useState('')
@@ -23,7 +24,7 @@ const Profile = () => {
        <div className={style.wrapper}>
          <Sidebar setactivetab={setactivetab}/>
          <div className={style.tab_wrapper}>
-            {renderactivetab()}
+            <Outlet />
          </div>
        </div>
     </section>

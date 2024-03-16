@@ -22,10 +22,18 @@ const Sidebar = ({setactivetab}) => {
             <FontAwesomeIcon icon={faTimes} onClick={closebar}/> 
         </div>
         <ul>
-          <li onClick={()=>activateTab("dashboard")}>Dashboard</li>
-          <li onClick={()=>activateTab("invest")}>Invest</li>
-          <li onClick={()=>activateTab("deposit")}>Deposit funds</li>
-          <li onClick={()=>activateTab("withdrawals")}>Withdrawals</li>
+          <li>
+            <Link to='dashboard'>Dashboard</Link>
+          </li>
+          <li>
+            <Link to='invest'>Invest</Link>
+          </li>
+          <li>
+            <Link to='deposit'>Deposit funds</Link>
+          </li>
+          <li>
+            <Link to='withdrawals'>Withdrawals</Link>
+          </li>
           <li onClick={()=>activateTab()}>logout</li>
         </ul>
         <button>

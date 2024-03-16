@@ -48,7 +48,7 @@ const Navbar = () => {
           ))}
         </div>
         <button className={styles.btn}>
-          <Link className={styles.profile} to='/account'>
+          <Link className={styles.profile} to='/account/dashboard'>
             <span className={styles.initials}>
               <FontAwesomeIcon icon={faUserAlt} />
             </span>

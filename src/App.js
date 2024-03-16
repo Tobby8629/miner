@@ -11,6 +11,11 @@ import { cryptoFetch } from './Redux/CryptoMarket/Crypto';
 import HowItWorks from './pages/How_it_works/HowItWorks';
 import About from './pages/About/About';
 import Profile from './pages/Profile/Profile';
+import Dashboard from './component/Account/Dashboard/Dashboard';
+import Sidebar from './component/Account/sidebar/Sidebar';
+import Invest from './component/Account/Invest/Invest';
+import Deposit from './component/Account/Deposit/Deposit';
+import Withdrawals from './component/Account/withdrawals/Withdrawals';
 
 function App() {
   const dispatch = useDispatch()
@@ -37,7 +42,7 @@ function App() {
       if (window.innerWidth >= 768) {
         sethideNavbar(false);
       } else {
-        sethideNavbar(location.pathname === "/account");
+        sethideNavbar(location.pathname.includes("/account"));
       }
     };
     adjust();
@@ -52,7 +57,7 @@ function App() {
   
   
   const coins = useSelector((state)=> state?.cryptoFetch?.cryptofetch)
-  const hideFooter = (location.pathname === '/account')
+  const hideFooter = (location.pathname.includes('/account'))
   console.log(hideNavbar)
   
   
@@ -65,7 +70,12 @@ function App() {
       <Route path='/' element={<Home />} />
       <Route path='about' element={<About />} />
       <Route path='works' element={<HowItWorks />} />
-      <Route path='account' element={<Profile />} />
+      <Route path='account' element={<Profile />}>
+        <Route path='dashboard' element={<Dashboard />}/>
+        <Route path='invest' element={<Invest />} />
+        <Route path='deposit' element={<Deposit />} />
+        <Route path='withdrawals' element={<Withdrawals />} />
+      </Route>
     </Routes>
     {!hideFooter && <Footer />}
    </>

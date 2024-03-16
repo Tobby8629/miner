@@ -88,10 +88,6 @@
 
 @media (min-width: 1280px) {
 
-  .dashboard {
-    width: calc(100% - 20%);
-  }
-
   .box {
     width: calc(33.3% - .8rem);
     margin-right: .8rem;
