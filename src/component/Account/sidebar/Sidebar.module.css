@@ -54,6 +54,10 @@
  font-size: 33px;
 }
 
+.nav_tray li a {
+  color: white;
+}
+
 .nav_tray button {
   background: transparent;
   outline: none;
@@ -70,6 +74,11 @@
 
 .show {
   left: 0;
+}
+
+.nav_tray li .active {
+  color: var(--secondary-color);
+  background-color: aqua;
 }
 
 @media (min-width: 768px) {
@@ -106,6 +115,7 @@
     padding: 1rem;
     border-bottom: 2px solid rgb(195, 169, 23);;
   }
+
 
   .nav_tray button {
     display: none;

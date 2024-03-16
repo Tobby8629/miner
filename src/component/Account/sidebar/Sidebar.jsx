@@ -2,16 +2,12 @@ import React, { useState } from 'react'
 import style from './Sidebar.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
-const Sidebar = ({setactivetab}) => {
+const Sidebar = () => {
   const [toggle, settoggle] = useState(false)
   const openbar = () => settoggle(true)
   const closebar = () => settoggle(false)
-  const activateTab = (tab,e) => {
-    setactivetab(tab)
-    closebar()
-  }
   return (
     <section className={style.sidebar}>
         <div className={style.flex}>
@@ -25,20 +21,20 @@ const Sidebar = ({setactivetab}) => {
         <div className={style.X}>
             <FontAwesomeIcon icon={faTimes} onClick={closebar}/> 
         </div>
-        <ul>
+        <ul onClick={closebar}>
           <li>
-            <Link to='dashboard'>Dashboard</Link>
+            <NavLink to='dashboard' activeClassName={style.active}>Dashboard</NavLink>
           </li>
           <li>
-            <Link to='invest'>Invest</Link>
+            <NavLink to='invest' activeClassName={style.active}>Invest</NavLink>
           </li>
           <li>
-            <Link to='deposit'>Deposit funds</Link>
+            <NavLink to='deposit' activeClassName={style.active}>Deposit funds</NavLink>
           </li>
           <li>
-            <Link to='withdrawals'>Withdrawals</Link>
+            <NavLink to='withdrawals' activeClassName={style.active}>Withdrawals</NavLink>
           </li>
-          <li onClick={()=>activateTab()}>logout</li>
+          <li>logout</li>
         </ul>
         <button>
             <Link to='/'>Back to Homepage</Link>

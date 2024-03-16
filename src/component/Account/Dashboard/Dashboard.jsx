@@ -15,8 +15,11 @@ import Returns from './Returns'
 const Dashboard = () => {
   return (
     <section className={style.dashboard}>
-      <h1>Dashboard</h1>
-      <main className={style.box_wrapper}>
+      <h1> Welcome Back</h1>
+      <main className={style.balance}>
+        
+      </main>
+      {/* <main className={style.box_wrapper}>
         <Box image={wallet} alt='balance'  amount="2200 USD"/>
         <Box image={users} alt='Referral Earning'  amount="2200 USD"/>
         <Box image={active} alt='active investment' amount="2200 USD"/>
@@ -34,7 +37,7 @@ const Dashboard = () => {
           </div>
         </div>
         <Returns />
-      </main>
+      </main> */}
     </section>
   )
 }
