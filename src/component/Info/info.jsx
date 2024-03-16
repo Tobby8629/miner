@@ -5,9 +5,11 @@ const info = () => {
   return (
     <section className="aboutUs">
       <div className="about">
-        <h1>About Us <span className='dot'></span></h1>
-        <p>Welcome to <b>Crypto Gland !</b> We're here to help you invest
-          in the future of finance and unleash the power of cryptocurrencies.</p>
+        <div className='header_wrap'>
+          <h1>About Us <span className='dot'></span></h1>
+          <p>Welcome to <b>Crypto Gland !</b> We're here to help you invest
+            in the future of finance and unleash the power of cryptocurrencies.</p>
+        </div>
       </div>
 
       <div className="ourMission">

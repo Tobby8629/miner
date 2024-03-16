@@ -21,21 +21,7 @@ function App() {
   const dispatch = useDispatch()
   const location = useLocation()
   const [hideNavbar, sethideNavbar] = useState('')
-  // useEffect(() => {
-  //   // const getCoins = async () => {
-  //   // dispatch(cryptoFetch())
-  //   // }
-  //   // getCoins()
-  //  const adjust = () => {
-  //     if (window.innerWidth >= 768) {
-  //       sethideNavbar(false)
-  //     } else {
-  //       sethideNavbar(location.pathname === "/account") 
-  //     }
-  //   };
-  //   window.addEventListener('resize', adjust())
-  //   adjust()
-  // },[dispatch, location.pathname])
+
 
   useEffect(() => {
     const adjust = () => {

@@ -16,7 +16,7 @@
 
 .main p {
   text-align: center;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .text,
@@ -29,6 +29,12 @@
 @media (min-width: 768px) {
   .main {
     width:65% ;
+  }
+
+  .main p {
+    text-align: center;
+    font-size: 20px;
+    line-height: 35px;
   }
 }
 

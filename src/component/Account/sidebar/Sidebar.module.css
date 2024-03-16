@@ -1,10 +1,21 @@
-
-.nav_toogle {
+.nav_toogle,
+.flex {
  position: absolute;
  top: 1.5%;
- left: 1rem;
+ right: 1rem;
  color: white;
  font-size: 33px;
+ display: flex;
+ justify-content: space-between;
+}
+
+.flex {
+  font-size: 15px;
+  left: 1rem;
+}
+
+.nav_toogle h2 {
+  font-size: 22px;
 }
 
 .nav_tray {
@@ -63,7 +74,8 @@
 
 @media (min-width: 768px) {
   .nav_toogle,
-  .X {
+  .X,
+  .flex {
     display: none;
   }
 

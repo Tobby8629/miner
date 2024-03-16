@@ -83,6 +83,31 @@
   .about {
     text-align: center;
     padding: 4rem 5rem;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutUs h1 {
+    font-size: 40px;
+  }
+
+  .aboutUs p {
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: 400;
+  }
+
+  .ourMission p,
+  .getStarted p,
+  .whyUs  ul li {
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  .header_wrap {
+    margin: auto;
   }
 
   .ourMission {
@@ -106,11 +131,17 @@
 @media (min-width: 1024px) {
   .about {
     padding: 5rem 9rem;
+    height: 90vh;
+  }
+
+  .header_wrap {
+    width: 80%;
+    margin: auto;
   }
 
   .about p {
-    font-size: 18px;
-    line-height: 35px;
+    font-size: 22px;
+    line-height: 40px;
   }
 
   .ourMission {
@@ -140,6 +171,25 @@
     font-size: 15px;
     line-height: 30px;
   }
+
+  .ourMission p,
+  .getStarted p,
+  .whyUs  ul li {
+    font-size: 25px;
+    line-height: 55px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header_wrap {
+    width: 65%;
+    margin: auto;
+  }
+
+  .about p {
+    font-size: 28px;
+    line-height: 55px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -147,13 +197,15 @@
     padding: 6rem 16rem;
   }
 
-  /* .about h1 {
-    font-size: 25px;
-  } */
+  .header_wrap {
+    width: 55%;
+    margin: auto;
+  }
 
   .about p {
-    font-size: 20px;
-    line-height: 38px;
+    font-size: 28px;
+    line-height: 55px;
+    font-weight: 200;
   }
 
   .ourMission {
@@ -186,5 +238,12 @@
   .getStarted p{
     font-size: 18px;
     line-height: 33px;
+  }
+
+  .ourMission p,
+  .getStarted p,
+  .whyUs  ul li {
+    font-size: 28px;
+    line-height: 60px;
   }
 }

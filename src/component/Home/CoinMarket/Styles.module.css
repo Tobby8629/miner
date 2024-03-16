@@ -52,7 +52,6 @@
   content: "";
   height: 100%;
   width: 5px;
-  /* background-color: rgb(28, 126, 201); */
   background-color: rgb(195, 169, 23);
   position: absolute;
   left: -15px;
@@ -76,6 +75,10 @@
   .lead_header {
    font-size: 18px;
   }
+
+  .wrapper h1 {
+    font-size: 30px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -83,7 +86,7 @@
     padding:  1rem 3rem;
   }
   .wrapper h1 {
-    font-size: 32px;
+    font-size: 40px;
     margin: 3rem 0;
     font-weight: 700;
   }
