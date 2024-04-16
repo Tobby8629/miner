@@ -9,7 +9,8 @@
 :root {
   --primary-color: rgb(18, 26, 86);
   --bg: rgb(233, 229, 229);
-  --secondary-color: rgb(184, 165, 61); 
+  --secondary-color: rgb(184, 165, 61);
+  --light-secondary-color:rgb(212, 183, 22);
 }
 
 body {
