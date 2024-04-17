@@ -5,6 +5,7 @@
 
 .balance {
   background-color: var(--primary-color);
+  background-image: url('../../../../public/assets/body-bg.png');
   color: #fff;
   padding: 1rem;
   margin: 1rem 3px;
@@ -70,6 +71,7 @@
 .box {
   height: 120px;
   background-color: var(--primary-color);
+  background-image: url('../../../../public/assets/body-bg.png');
   padding:  1.5rem 1rem;
   display: flex;
   align-items: center;
@@ -362,6 +364,10 @@
   .slash {
     font-size: 16px;
   }
+
+  .copylink p {
+    font-size: 17px;
+  }
   
 }
 
@@ -418,6 +424,10 @@
     height: 40px;
     width: 40px;
     line-height: 40px;
+  }
+
+  .copylink p {
+    font-size: 20px;
   }
 
 }
