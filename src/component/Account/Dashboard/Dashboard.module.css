@@ -7,7 +7,7 @@
   background-color: var(--primary-color);
   color: #fff;
   padding: 1rem;
-  margin: 1rem 0;
+  margin: 1rem 3px;
 }
 
 .dashboardbox {
@@ -15,6 +15,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 3rem;
+  
 }
 
 .dashboardbox .amt {
@@ -68,13 +69,25 @@
 
 .box {
   height: 120px;
-  background-color: #fff;
+  background-color: var(--primary-color);
   padding:  1.5rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-radius: 7px;
   margin: 1rem 0;
+}
+
+.box_wrapper {
+  margin-top: 4rem;
+}
+
+.price {
+  color: #fff;
+}
+
+.name {
+  color: var(--secondary-color);
 }
 
 .return_info {
@@ -112,11 +125,13 @@
   font-size: 30px;
 }
 
-
-
 .boximg {
   height: 100%;
-  max-width: 25%;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .boximg img {
@@ -216,6 +231,10 @@
 
 @media (min-width: 768px) {
 
+  .balance {
+    margin-top: 6rem;
+  }
+
   .dashboard {
     padding: 2rem 0;
   }
@@ -234,7 +253,7 @@
   }
 
   .box_wrapper {
-    margin-top: 5rem
+    margin-top: 3rem
   }
 
   .box{
@@ -250,6 +269,22 @@
   .price {
     font-weight: 600;
     font-size: 1.5rem;
+  }
+
+  .wallet h3 {
+    font-size: 15px;
+  }
+
+  .bal {
+    font-size: 15px;
+  }
+
+  .analtic {
+    width: 24px;
+  }
+
+  .roi p {
+    font-size: 12px;
   }
 
   .name {
@@ -268,6 +303,14 @@
 
   .returns table {
     width: 100%;
+  }
+
+  .dashboardbox .amt {
+    font-size: 23px;
+  }
+
+  .slash {
+    font-size: 13px;
   }
   
 }
@@ -301,13 +344,31 @@
   .copylink button {
     font-size: 14px;
   }
+
+  .dashboardLink {
+    font-size: 15px;
+  }
+
+  .dashboardLink .icon {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+  }
+
+  .dashboardbox .amt {
+    font-size:33px;
+  }
+
+  .slash {
+    font-size: 16px;
+  }
   
 }
 
 @media (min-width: 1280px) {
 
   .box {
-    width: calc(33.3% - .8rem);
+    width: calc(25% - .8rem);
     margin-right: .8rem;
     height: 160px;
   }
@@ -320,4 +381,43 @@
   .name {
     font-size: 1rem;
   }
+
+  .wallet h3 {
+    font-size: 20px;
+  }
+
+  .bal {
+    font-size: 20px;
+  }
+
+  .analtic {
+    width: 30px;
+  }
+
+  .roi p {
+    font-size: 15px;
+  }
+
+  .dashboardbox {
+    margin-bottom: 7rem;
+  }
+
+  .dashboardLink {
+    font-size: 20px;
+  }
+
+  .dashboardbox .amt {
+    font-size:40px;
+  }
+
+  .slash {
+    font-size: 18px;
+  }
+
+  .dashboardLink .icon {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+  }
+
 }

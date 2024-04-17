@@ -1,18 +1,12 @@
 import React from 'react'
 import style from './Dashboard.module.css'
 import Box from './Box'
-import wallet from '../../../util/wallet.png'
-import users from '../../../util/users.svg'
-import active from '../../../util/active.jpg'
-import withdrawal from '../../../util/withdrawal.jpg'
-import total_return from '../../../util/totaldepo.jpg'
-import depo from '../../../util/totaldep.jpg'
 import analtics from '../../../util/analytics.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCopy, faEyeSlash } from '@fortawesome/free-regular-svg-icons'
 import Returns from './Returns'
 import { Link } from 'react-router-dom'
-import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import { faArrowLeft, faArrowRight, faChartColumn, faPlus, faUsers } from '@fortawesome/free-solid-svg-icons'
 
 
 const Dashboard = () => {
@@ -59,10 +53,10 @@ const Dashboard = () => {
         </section>
       </main>
       <main className={style.box_wrapper}>
-        <Box image={users} alt='Referral Earning'  amount="2200 USD"/>
-        <Box image={active} alt='active investment' amount="2200 USD"/>
-        <Box style={{color: '#17b917'}} image={withdrawal} alt='total withdrawal' amount="2200 USD" className={style.inverse}/>
-        <Box style={{color: '#f3d429'}} image={depo} alt='total deposit' amount="2200 USD" className={style.inverse}/>
+        <Box iconstyle={{color: 'rgb(184, 165, 61)' }}  image={faUsers} alt='Referral Earning'  amount="2200 USD"/>
+        <Box iconstyle = {{color: 'rgb(47 62 179)'}} image={faChartColumn} alt='active investment' amount="2200 USD"/>
+        <Box iconstyle={{color: '#39db39'}} image={faArrowRight} alt='total deposit' amount="2200 USD" className={style.inverse}/>
+        <Box iconstyle = {{color: '#ff2727'}} image={faArrowLeft} alt='total withdrawal' amount="2200 USD" className={style.inverse}/>
         <div className={style.referral}>
           <h2>Referral Link</h2>
           <div className={style.copylink}>

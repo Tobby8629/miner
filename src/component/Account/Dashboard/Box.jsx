@@ -1,12 +1,13 @@
 import React from 'react'
 import style from './Dashboard.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const Box = ({image, alt, amount, children, className, style: inlineStyle, stylep: inlineStylep}) => {
+const Box = ({image, alt, iconstyle, amount, children, className, style: inlineStyle}) => {
   return (
 
     <div className={`${style.box} ${className}`}>
-      <div className={style.boximg}> 
-        <img src={image} alt={alt} />
+      <div className={style.boximg} style={iconstyle}> 
+        <FontAwesomeIcon icon={image} />
       </div>
       <div className={style.boxname}>
         <p className={style.price} style={inlineStyle}>{amount}</p>
