@@ -11,12 +11,21 @@
 }
 
 .each h2 {
-  font-size: 16px;
+  font-size: 25px;
   margin-bottom: 1rem;
 }
 
 .each p {
   font-size: 14px;
+  margin-bottom: .3rem;
+  text-transform: capitalize;
+}
+
+.bold {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  color: var(--secondary-color);
 }
 
 .amount {
@@ -27,6 +36,7 @@
 }
 
 @media (min-width: 768px) {
+  
 .lead_text {
   margin: 1.5rem 0;
   font-size: 38px;
@@ -43,6 +53,10 @@
     width: 48%;
     padding: 2rem 1rem;
   }
+  
+  .each h2 {
+    font-size: 25px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -50,8 +64,26 @@
     padding: 3rem;
   }
 
+  .wrapper {
+    justify-content: space-between;
+  }
+
   .wrapper .each {
-    width: 23%;
+    width: 32%;
+  }
+
+  .each h2 {
+    font-size: 27px;
+    margin-bottom: 1rem;
+  }
+  
+  .each p {
+    font-size: 18px;
+  }
+  
+  .bold {
+    font-size: 20px;
+    line-height: 35px;
   }
 }
 

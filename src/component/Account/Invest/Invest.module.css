@@ -42,6 +42,10 @@
   margin-bottom: 1rem;
 }
 
+.card p {
+  text-transform: capitalize;
+}
+
 .card .duration {
   border-bottom: none;
 }
@@ -50,6 +54,7 @@
   font-size: 20px;
   font-weight: 500;
   color: var(--secondary-color);
+  text-transform: capitalize;
 }
 
 .attr {
@@ -138,6 +143,10 @@
 
   .card {
     width: 85%;
+  }
+
+  .each h2 {
+    font-size: 25px;
   }
 
   .invest main {
