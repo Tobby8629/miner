@@ -40,10 +40,10 @@ export const benefit = [
 // ]
 
 export const plans = [
-  {name: "Pro 255T/TH", repeat:1,  referral: 20,percentage:25,duration: "720 days", miner:"Antminer S19", range: 'XP Hydro', min: "$15000", max:"$1,000,000"},
-  {name: "Ultra 140T/TH", repeat:1, referral:15 ,percentage:20,duration: "360 days", miner: "Bitmain Antminer S19", range: 'XP', min:"$7999", max:"$700,00"},
-  {name: "Gland 5G 112T/TH", repeat:2, referral: 10,percentage:15,duration:" 180 days", miner: "WhatsMiner", range: 'M30s++', min:"$4999", max:"$70,000"},
-  {name: "Hydro 4G 192T/TH", repeat:1, referral: 10,percentage: 10, duration: "90 days", miner: "MicroBT", range: 'M56s', min:"$2,999", max:"$35,000"},
-  {name: "3G Fast 90T/TH", repeat:2, referral: 5,percentage:2.5,duration:" 10 days", miner: "AntMiner", range: 'M36s', min:"$99", max:"$1,970"},
+  {name: "Pro 255TH/S", repeat:1,  referral: 20,percentage:25,duration: "720 days", miner:"Antminer S19", range: 'XP Hydro', min: "$15000", max:"$1,000,000"},
+  {name: "Ultra 140TH/S", repeat:1, referral:15 ,percentage:20,duration: "360 days", miner: "Bitmain Antminer S19", range: 'XP', min:"$7999", max:"$700,00"},
+  {name: "Gland 5G 112TH/S", repeat:2, referral: 10,percentage:15,duration:" 180 days", miner: "WhatsMiner", range: 'M30s++', min:"$4999", max:"$70,000"},
+  {name: "Hydro 4G 192TH/S", repeat:1, referral: 10,percentage: 10, duration: "90 days", miner: "MicroBT", range: 'M56s', min:"$2,999", max:"$35,000"},
+  {name: "3G Fast 90TH/S", repeat:2, referral: 5,percentage:2.5,duration:" 10 days", miner: "AntMiner", range: 'M36s', min:"$99", max:"$1,970"},
   {name: "AI Cloud 5G", repeat:1, referral: 5,percentage: 5, duration: "45 days", miner: "MicroBT", range: 'Pro3', min:"unlimited", max:"unlimited"}
 ]
