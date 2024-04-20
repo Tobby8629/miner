@@ -208,6 +208,7 @@ text-align: center;
     padding-top: 13%;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   .form {
@@ -231,7 +232,8 @@ text-align: center;
 
   .welcome_text {
     width: 45%;
-    font-size: 25px;
+    font-size: 16px;
+    text-align: center;
     line-height: 35px;
     background-color: rgba(52, 52, 52, 0.648);
     border-radius: 10px;
@@ -239,13 +241,28 @@ text-align: center;
     height: fit-content;
     margin: 0;
     margin-right: 2rem;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; */
+  }
+
+  .logo {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .quote {
+    width: 90%;
+    margin: .4rem auto;
+    font-style: italic;
+    font-size: 13px;
+    line-height: 23px;
+    font-weight: 300;
+    display: block;
   }
 
   .welcome_text .large_text {
-    font-size: 50px;
+    font-size: 35px;
   }
 
   .submit {
@@ -270,6 +287,26 @@ text-align: center;
 
   .form input {
     font-size: 14px;
+  }
+
+  .welcome_text {
+    width: 35%; 
+    font-size: 16px;
+  }
+
+  .logo {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .welcome_text .large_text {
+    font-size: 40px;
+  }
+
+  .quote {
+    width: 80%; 
+    font-size: 15px;
+    line-height: 27px;
   }
 
   .forget_password a,

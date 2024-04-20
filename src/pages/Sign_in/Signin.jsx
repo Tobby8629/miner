@@ -9,7 +9,15 @@ const Signin = () => {
   const [visible, setvisible] = useState(false)
   return (
     <section className={styles.main}>
-      <h2 className={styles.welcome_text}> <span className={styles.large_text}>Welcome Back!</span><br/>It's been a minute.<br/>  Enter your details to sign in</h2>
+      <h2 className={styles.welcome_text}>
+         <span className={styles.large_text}>Welcome to</span>
+         <br/> <span className={styles.logo}>Crypto gland </span><span className='dot'></span><br/>  
+         <span className={styles.quote}>         
+          "Embrace the power of crypto mining with Crypto gland 
+          - where cutting-edge technology meets lucrative opportunities."
+         </span>
+        Enter your details to continue
+       </h2>
       <form className={`${styles.form} ${styles.signin}`}>
         <div className={styles.wrapper}>
           <div className={styles.reg}>
@@ -45,7 +53,6 @@ const Signin = () => {
             </div>  
             <p className={styles.exist}> Don't have an account? <Link to="/registration">sign up</Link></p>
           </div>
-         
         </div>
       </form>
     </section>

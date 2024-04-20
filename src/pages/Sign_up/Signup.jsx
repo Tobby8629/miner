@@ -9,7 +9,6 @@ const Signup = () => {
   const [register,setregister] = useState({first_name: '', last_name: '',email: '', password:''})
   useEffect(() => {
     const {state} = location
-    console.log(state)
     setregister(prevRegister => ({
       ...prevRegister,
       email: state ?? ""
@@ -19,7 +18,15 @@ const Signup = () => {
 
   return (
     <section className={styles.main}>
-        <h2 className={styles.welcome_text}> <span className={styles.large_text}>Welcome!</span><br/> It looks like you're new here.<br/> Would you like to create an account?</h2>
+        <h2 className={styles.welcome_text}>
+         <span className={styles.large_text}>Welcome to</span>
+         <br/> <span className={styles.logo}>Crypto gland </span><span className='dot'></span><br/>  
+         <span className={styles.quote}>         
+          "Embrace the power of crypto mining with Crypto gland 
+          - where cutting-edge technology meets lucrative opportunities."
+         </span>
+         It looks like you're new here.<br/> Would you like to create an account?
+       </h2>
         <form className={styles.form}>
         <div className={styles.reg}>
           <h2>Sign Up</h2>
