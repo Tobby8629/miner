@@ -10,6 +10,7 @@
 
 .welcome_text {
   font-size: 14px;
+  text-align: center;
   margin: 0;
   line-height: 24px;
   margin: 1rem 0;
@@ -17,6 +18,22 @@
 
 .large_text {
   font-size: 22px;
+}
+
+.logo {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.quote {
+  width: 90%;
+  margin: .4rem auto;
+  font-style: italic;
+  font-size: 13px;
+  line-height: 23px;
+  font-weight: 300;
+  display: block;
+  color: var(--secondary-color);
 }
 
 .form {
@@ -292,11 +309,6 @@ text-align: center;
   .welcome_text {
     width: 35%; 
     font-size: 16px;
-  }
-
-  .logo {
-    font-size: 60px;
-    line-height: 70px;
   }
 
   .welcome_text .large_text {
