@@ -1,12 +1,19 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 export const glandApi = createApi({
-    reducerPath: glandApi,
+    reducerPath: "glandApi",
     baseQuery: fetchBaseQuery({
       baseUrl: "http://127.0.0.1:8000/api"
     }),
     endpoints: (builder) => ({
-      registerUser: builder.query({
+      getStarted: builder.mutation({
+        query: (email) => ({
+            url: '/get-started',
+            method: 'post',
+            body: email
+        })
+      }),
+      registerUser: builder.mutation({
         query: (userData) => ({
             url: "/register",
             method: "POST",
@@ -16,4 +23,7 @@ export const glandApi = createApi({
     })
 }) 
 
-export const { useRegisterUserQuery } = glandApi
+export const { 
+  useRegisterUserMutation,
+  useGetStartedMutation,
+ } = glandApi

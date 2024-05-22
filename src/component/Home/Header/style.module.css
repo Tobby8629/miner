@@ -176,6 +176,17 @@
         font-size: 23px;
         margin: 1rem 0;
       }
-    
-  
+
+      .button {
+        width: 40%;
+      } 
+      
+      .button input {
+        width: 70%;
+      }
+
+      .button button {
+        width: 30%;
+        padding: 1rem .4rem;
+      }
   }

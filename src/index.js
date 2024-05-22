@@ -5,15 +5,19 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux'
-import store from './Redux/store';
+import { glandApi } from './Redux/api/apiSlice';
+import {ApiProvider} from '@reduxjs/toolkit/query/react'
+import { store } from './Redux/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Provider store={store}>
-        <App />
-      </Provider>
+      <ApiProvider api={glandApi}>
+        {/* <Provider store={store}> */}
+          <App />
+        {/* </Provider> */}
+      </ApiProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

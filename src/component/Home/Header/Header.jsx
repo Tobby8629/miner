@@ -2,17 +2,31 @@ import React, { useState } from 'react'
 import styles from './style.module.css'
 import { useNavigate } from 'react-router-dom';
 import Button from '../../button/Button';
+import { useGetStartedMutation } from '../../../Redux/api/apiSlice';
 
 const Header = () => {
   const [email, setEmail] = useState('');
   const navigatee = useNavigate()
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-  const navigate = (e) => {
-    e.preventDefault()
-    navigatee('/registration', {state: email}, {replace: true});
-  }
+ 
+   const [get_start, {data, isLoading, error}] = useGetStartedMutation();
+
+   const handleEmailChange = (e) => {
+     setEmail(e.target.value);
+   };
+ 
+   const navigate = async (e) => {
+     e.preventDefault();
+     try {
+       await get_start(email).unwrap();
+       if (data && !isLoading && !error) {
+         navigatee('/registration', { state: { email }, replace: true });
+       } 
+     }
+     catch (error) {
+        console.error(error);
+     }
+   };
+
   return (
     <header className={styles.header}>
         <div className={styles.header_text}>
@@ -23,6 +37,7 @@ const Header = () => {
           <input type='email' placeholder='Enter your email address' value={email} onChange={handleEmailChange} />
           <Button />
         </form>
+          {error && <p style={{color: "red"}}>{error?.error}</p>}
       </header>
   )
 }
