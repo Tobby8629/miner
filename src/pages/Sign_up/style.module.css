@@ -129,6 +129,11 @@
   width: 100%;
 }
 
+.submit button:disabled {
+  background: rgb(190, 182, 182);
+  color: rgb(235, 214, 214);
+}
+
 .forget_password {
 text-align: center;
 }
