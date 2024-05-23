@@ -9,7 +9,6 @@ const Signup = () => {
   const location = useLocation();
   const navigate = useNavigate()
   const [register,setregister] = useState({first_name: '', last_name: '',email: '', password:'', terms: true})
-  console.log(register)
   useEffect(() => {
     const {state} = location
     setregister(prevRegister => ({

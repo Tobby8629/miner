@@ -2,11 +2,30 @@ import React, { useState } from 'react'
 import styles from '../Sign_up/style.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate,  } from 'react-router-dom'
+import { useLoginUserMutation } from '../../Redux/api/apiSlice'
 
 
 const Signin = () => {
   const [visible, setvisible] = useState(false)
+  const navigate = useNavigate()
+  const [login,setlogin] = useState({first_name: '', last_name: '',email: '', password:'', terms: true})
+  const [loggedIn, {data: logged, isLoading, error }] = useLoginUserMutation(login)
+  const handleForm = (e) => {
+    const {name, value} = e?.target
+    setlogin({...login, [name]: value})
+  }
+
+  const Submit = async (e) => {
+    e.preventDefault()
+    try {
+      await loggedIn(login).unwrap()
+      logged && navigate("/login", {replace: true});
+    }
+    catch (e) {
+      console.log(e);
+    }
+  }
   return (
     <section className={styles.main}>
       <h2 className={styles.welcome_text}>
@@ -18,7 +37,7 @@ const Signin = () => {
          </span>
         Enter your details to continue
        </h2>
-      <form className={`${styles.form} ${styles.signin}`}>
+      <form onSubmit={Submit} className={`${styles.form} ${styles.signin}`}>
         <div className={styles.wrapper}>
           <div className={styles.reg}>
             <h2>Sign In</h2>
@@ -30,13 +49,13 @@ const Signin = () => {
               <div>
                 <FontAwesomeIcon icon={faEnvelope}/>
               </div>
-              <input type='email' id='email' placeholder='please enter email address' />
+              <input type='email' name='email' onChange={handleForm} id='email' placeholder='please enter email address' />
             </div>
           </div>
           <div className={styles.input_wrapper}>
             <label htmlFor='password'>password</label>
             <div className={styles.password}>
-              <input type={visible ? "text":"password"} id='password' placeholder='please enter password' />
+              <input type={visible ? "text":"password"} id='password' onChange={handleForm} placeholder='please enter password' />
               <div className={styles.visible}>
               {visible ?
               <FontAwesomeIcon icon={faEye} onClick={()=> setvisible(!visible)}/>
@@ -44,8 +63,9 @@ const Signin = () => {
             </div>
             </div>
           </div>
+          { error && <p style={{color: "red"}}>{error?.status}</p>}
           <div className={styles.submit}>
-            <button type="submit">Login</button>
+            <button type="submit">{isLoading ? "Logging..." : "Login"}</button>
           </div>
           <div className={styles.options}> 
             <div className={styles.forget_password}>

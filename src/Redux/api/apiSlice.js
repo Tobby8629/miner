@@ -19,6 +19,13 @@ export const glandApi = createApi({
             method: "POST",
             body: userData,
         })
+      }),
+      loginUser: builder.mutation({
+        query: (loginData) => ({
+           url: "/login",
+           method: "POST",
+           body: loginData 
+        })
       })
     })
 }) 
@@ -26,4 +33,5 @@ export const glandApi = createApi({
 export const { 
   useRegisterUserMutation,
   useGetStartedMutation,
+  useLoginUserMutation,
  } = glandApi
