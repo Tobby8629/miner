@@ -4,12 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'
 import { Link, useNavigate,  } from 'react-router-dom'
 import { useLoginUserMutation } from '../../Redux/api/apiSlice'
-import { useDispatch } from 'react-redux'
-import { logger } from '../../Redux/LoginSlice'
-
 
 const Signin = () => {
-  const dispatch = useDispatch()
   const [visible, setvisible] = useState(false)
   const navigate = useNavigate()
   const [login,setlogin] = useState({email: '', password:''})
@@ -25,7 +21,6 @@ const Signin = () => {
     try {
       await loggedIn(login).unwrap()
       logged && navigate("/", {replace: true});
-      // const logged = await dispatch(logger(login))
     }
     catch (e) {
       console.log(e);

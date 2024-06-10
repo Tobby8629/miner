@@ -93,7 +93,7 @@ const Signup = () => {
               </div>
             </div>
 
-            { error && <p style={{color: "red"}}>{error?.status}</p>}
+            { error && <p style={{color: "red"}}>{error?.data?.message}</p>}
 
             <div className={styles.terms}>
               <input type="checkbox" onChange={()=> setregister({...register, terms: !register?.terms})} />
