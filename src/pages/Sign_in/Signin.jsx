@@ -4,14 +4,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'
 import { Link, useNavigate,  } from 'react-router-dom'
 import { useLoginUserMutation } from '../../Redux/api/apiSlice'
+import { useDispatch } from 'react-redux'
+import { logger } from '../../Redux/LoginSlice'
 
 
 const Signin = () => {
+  const dispatch = useDispatch()
   const [visible, setvisible] = useState(false)
   const navigate = useNavigate()
-  const [login,setlogin] = useState({first_name: '', last_name: '',email: '', password:'', terms: true})
+  const [login,setlogin] = useState({email: '', password:''})
   const [loggedIn, {data: logged, isLoading, error }] = useLoginUserMutation(login)
   const handleForm = (e) => {
+    console.log(login)
     const {name, value} = e?.target
     setlogin({...login, [name]: value})
   }
@@ -20,7 +24,8 @@ const Signin = () => {
     e.preventDefault()
     try {
       await loggedIn(login).unwrap()
-      logged && navigate("/login", {replace: true});
+      logged && navigate("/", {replace: true});
+      // const logged = await dispatch(logger(login))
     }
     catch (e) {
       console.log(e);
@@ -55,7 +60,7 @@ const Signin = () => {
           <div className={styles.input_wrapper}>
             <label htmlFor='password'>password</label>
             <div className={styles.password}>
-              <input type={visible ? "text":"password"} id='password' onChange={handleForm} placeholder='please enter password' />
+              <input type={visible ? "text":"password"} id='password' name='password' onChange={handleForm} placeholder='please enter password' />
               <div className={styles.visible}>
               {visible ?
               <FontAwesomeIcon icon={faEye} onClick={()=> setvisible(!visible)}/>

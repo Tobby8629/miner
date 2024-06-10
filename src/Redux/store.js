@@ -6,8 +6,8 @@
 // export const store = configureStore({
 //    reducer: {
 //       rootReducer,
-//       [glandApi.reducerPath]: glandApi.reducer,
-//       middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(glandApi.middleware)
+    //   [glandApi.reducerPath]: glandApi.reducer,
+    //   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(glandApi.middleware)
 //     },
 // });
 
