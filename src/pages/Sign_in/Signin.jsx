@@ -20,7 +20,7 @@ const Signin = () => {
     e.preventDefault()
     try {
       await loggedIn(login).unwrap()
-      !error && navigate("/", {replace: true});
+      await logged && navigate("/", {replace: true});
     }
     catch (e) {
       console.log(e);

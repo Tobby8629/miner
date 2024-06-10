@@ -27,7 +27,7 @@ const Signup = () => {
     e.preventDefault()
     try {
       await registerUser(register).unwrap()
-      registered && navigate("/login", {replace: true});
+      await register && navigate("/login", {replace: true});
     }
     catch (e) {
       console.log(e);
