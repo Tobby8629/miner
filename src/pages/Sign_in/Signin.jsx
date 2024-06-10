@@ -68,7 +68,7 @@ const Signin = () => {
             </div>
             </div>
           </div>
-          { error && <p style={{color: "red"}}>{error?.message}</p>}
+          { error && <p style={{color: "red"}}>{error?.data?.message}</p>}
           <div className={styles.submit}>
             <button type="submit">{isLoading ? "Logging..." : "Login"}</button>
           </div>
