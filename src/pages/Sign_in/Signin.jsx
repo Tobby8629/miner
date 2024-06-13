@@ -20,7 +20,9 @@ const Signin = () => {
     e.preventDefault()
     try {
       await loggedIn(login).unwrap()
+      console.log(logged)
       await logged && navigate("/", {replace: true});
+      await logged && sessionStorage.setItem("user", logged?.data)
     }
     catch (e) {
       console.log(e);

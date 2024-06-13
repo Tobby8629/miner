@@ -47,3 +47,8 @@ export const plans = [
   {name: "3G Fast 90TH/S", repeat:2, referral: 5,percentage:2.5,duration:" 10 days", miner: "AntMiner", range: 'M36s', min:"$99", max:"$1,970"},
   {name: "AI Cloud 5G", repeat:1, referral: 5,percentage: 5, duration: "45 days", miner: "MicroBT", range: 'Pro3', min:"unlimited", max:"unlimited"}
 ]
+
+export const User = () => {
+  const getuser = sessionStorage.getItem('user')
+  return getuser
+}

@@ -3,15 +3,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './styles.module.css'
+import { User } from '../Helpers/Helpers'
 
 const Navbar = () => {
   const [toogle, settoogle] = useState(false)
   const [unik, setunik] = useState(false)
+  const checkUser = User()
   const Links = [
     {name: 'Home', link: "/"},
     {name: 'About', link:"/about"},
     {name: 'How it works', link: "/works"},
-    {name: 'signup', link: "/registration"}
   ]
   useEffect(() => {
     window.addEventListener('scroll', () => {
@@ -48,6 +49,7 @@ const Navbar = () => {
           ))}
         </div>
         <button className={styles.btn}>
+          {checkUser ? 
           <Link className={styles.profile} to='/account/dashboard'>
             <span className={styles.initials}>
               <FontAwesomeIcon icon={faUserAlt} />
@@ -56,6 +58,8 @@ const Navbar = () => {
               <p>Lucas Boss</p>
             </span>
           </Link>
+         :  <Link to='/login'>Sign In</Link> 
+          }
         </button>
        </div>
     </nav>
