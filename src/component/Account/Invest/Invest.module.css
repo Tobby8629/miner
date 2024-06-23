@@ -1,11 +1,5 @@
-.invest {
-  padding: 2rem 1rem;
+.wrapper {
   color: white;
-}
-
-.invest h1 {
-  font-size: 30px;
-  color: var(--primary-color);
 }
 
 .wrapper {
@@ -61,7 +55,7 @@
   padding: 0 .5rem;
 }
 
-/* .invest h2 {
+/* .wrapper h2 {
   font-size: 18px;
 } */
 
@@ -95,7 +89,7 @@
   margin: .5em auto;
 }
 
-.invest button {
+.wrapper button {
   background-color: var(--secondary-color);
   color: var(--primary-color);
   outline: none;
@@ -118,25 +112,7 @@
 
 @media (min-width: 768px) {
 
-  .invest {
-    padding: 2rem 0;
-  }
-
-    .invest h1 {
-      height: 110px;
-      position: fixed;
-      z-index: 9;
-      background: var(--bg);
-      width: 100%;
-      top: 60px;
-      top: 96px;
-      line-height: 122px;
-      font-size: 42px;
-      padding: .7rem 0;
-      border-bottom: 2px solid var(--primary-color);
-    }
-
-  .invest h2 {
+  .wrapper h2 {
     font-size: 14px;
     text-align: center;
   }
@@ -149,14 +125,15 @@
     font-size: 25px;
   }
 
-  .invest main {
-    display: flex;
+  .wrapper {
+      display: flex;
       flex-wrap: wrap;
       margin-top: 5rem;
+      padding: 0;
      justify-content: center
   }
 
-  .invest button {
+  .wrapper button {
     font-size: 18px;
   }
 }
@@ -168,17 +145,14 @@
     padding: 2rem 0;
   }
 
-    .invest h2 {
+    .wrapper h2 {
       font-size: 24px;
       text-align: center;
     }
 }
 
 @media (min-width:1280px) {
-  .invest {
-    padding: 4rem 0;
-  }
-
+ 
   .card {
     width: 32%;
     margin-right: .5rem;

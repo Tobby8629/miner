@@ -67,3 +67,51 @@ a {
   border-radius: 50%;
   display: inline-block;
 }
+
+.dashboard_header {
+  font-size: 30px;
+  color: var(--primary-color);
+}
+
+.dashboard_tab {
+  padding: 1rem;
+  color: white; 
+}
+
+.sides{
+  color: white;
+}
+
+.sides.active {
+  color: red;
+}
+
+@media (min-width: 768px) {
+  .dashboard_tab {
+    padding: 2rem 0;
+  }
+   .dashboard_header {
+      height: 110px;
+      position: fixed;
+      z-index: 9;
+      background: var(--bg);
+      width: 100%;
+      top: 60px;
+      top: 96px;
+      line-height: 122px;
+      font-size: 42px;
+      padding: .7rem 0;
+      border-bottom: 2px solid var(--primary-color);
+  }
+}
+
+/* @media (min-width:1024px) {
+  .dashboard_tab {
+    padding: 3rem 0;
+  }
+} */
+
+/* @media (min-width:1280px) {
+  /* .dashboard_tab {
+    padding: 4rem 0;
+  } */

@@ -11,7 +11,7 @@ const Sidebar = () => {
   return (
     <section className={style.sidebar}>
         <div className={style.flex}>
-          <h2>Crypto Gland <span className='dot'></span></h2>
+          <Link to='/'>Crypto Gland <span className='dot'></span></Link>
         </div>
         <div className={style.nav_toogle} onClick={openbar}>
           <FontAwesomeIcon icon={faBars} />
@@ -23,16 +23,16 @@ const Sidebar = () => {
         </div>
         <ul onClick={closebar}>
           <li>
-            <NavLink to='dashboard' activeClassName={style.active}>Dashboard</NavLink>
+            <NavLink to='dashboard' className="sides">Dashboard</NavLink>
           </li>
           <li>
-            <NavLink to='invest' activeClassName={style.active}>Invest</NavLink>
+            <NavLink to='invest' className="sides">Invest</NavLink>
           </li>
           <li>
-            <NavLink to='deposit' activeClassName={style.active}>Deposit funds</NavLink>
+            <NavLink to='deposit' className="sides">Deposit funds</NavLink>
           </li>
           <li>
-            <NavLink to='withdrawals' activeClassName={style.active}>Withdrawals</NavLink>
+            <NavLink to='withdrawals' className="sides">Withdrawals</NavLink>
           </li>
           <li>logout</li>
         </ul>

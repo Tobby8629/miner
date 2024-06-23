@@ -1,8 +1,11 @@
 import React from 'react'
+import style from './deposit.module.css'
 
 const Deposit = () => {
   return (
-    <div>Deposit</div>
+    <section className="dashboard_tab">
+       <h1 className='dashboard_header'>Deposit</h1>
+    </section>
   )
 }
 

@@ -1,18 +1,25 @@
 .nav_toogle,
 .flex {
  position: absolute;
- top: 1.5%;
+ top: 2%;
  right: 1rem;
  color: white;
  font-size: 33px;
  display: flex;
  justify-content: space-between;
+ align-items: center;
 }
 
 .flex {
-  font-size: 15px;
   left: 1rem;
 }
+
+.flex a {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
 
 .nav_toogle h2 {
   font-size: 22px;
@@ -54,7 +61,7 @@
  font-size: 33px;
 }
 
-.nav_tray li a {
+.nav_tray .sides{
   color: white;
 }
 
@@ -74,11 +81,6 @@
 
 .show {
   left: 0;
-}
-
-.nav_tray li .active {
-  color: var(--secondary-color);
-  background-color: aqua;
 }
 
 @media (min-width: 768px) {

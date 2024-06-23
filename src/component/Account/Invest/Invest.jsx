@@ -5,8 +5,8 @@ import { plans } from '../../Helpers/Helpers'
 const Invest = () => {
  
   return (
-    <section className={style.invest}>
-      <h1>Start Investing</h1>
+    <section className="dashboard_tab">
+      <h1 className='dashboard_header'>Start Investing</h1>
        <main className={style.wrapper}>
           {plans?.map((plan)=>(
             <div key={plan?.miner} className={style.card}>
