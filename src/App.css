@@ -86,6 +86,15 @@ a {
   color: red;
 }
 
+.method_pop-overlay {
+  background-color: #121a5687;
+}
+
+.method_pop-content {
+  width: 300px;
+  background-color: white;
+}
+
 @media (min-width: 768px) {
   .dashboard_tab {
     padding: 2rem 0;

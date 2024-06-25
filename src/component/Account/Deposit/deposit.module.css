@@ -1,0 +1,28 @@
+.wrapper {
+  color: var(--primary-color);
+}
+
+.methodheader {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.methodlogo {
+  width: 80%;
+  margin: auto;
+}
+
+/* .methods {
+
+} */
+
+.methodlogo img {
+  width:100%;
+}
+
+
+@media (min-width: 768px) {
+  .wrapper {
+    margin-top: 5rem;
+  }
+}

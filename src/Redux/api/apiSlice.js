@@ -8,7 +8,7 @@ export const glandApi = createApi({
     endpoints: (builder) => ({
       getStarted: builder.mutation({
         query: (email) => ({
-            url: '/get-started',
+            url: '/getting-started',
             method: 'post',
             headers: {'Content-Type': 'application/json', accept: 'application/json'},
             body: email
@@ -29,6 +29,12 @@ export const glandApi = createApi({
            headers: {'Content-Type': 'application/json', accept: 'application/json'},
            body: loginData 
         })
+      }),
+      logoutUser: builder.mutation({
+        url: "/logout",
+        method: "post",
+        headers: {'Content-Type': 'application/json', accept: 'application/json'},
+       
       })
     })
 }) 
@@ -37,4 +43,5 @@ export const {
   useRegisterUserMutation,
   useGetStartedMutation,
   useLoginUserMutation,
+  useLogoutUserMutation,
  } = glandApi

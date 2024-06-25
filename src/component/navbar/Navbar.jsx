@@ -42,7 +42,7 @@ const Navbar = () => {
          <h1>Crypto Gland <span className={`dot ${unik ?'white' : null}`}></span></h1>
         </Link>
        </div>
-       <div className={`${styles.nav_menu} ${toogle ? styles.nav_show : ''}`}>
+       <div className={`${styles.nav_menu} ${toogle ? styles.nav_show : ''}`} onClick={()=> settoogle(false)}>
         <div className={styles.links}>
           {Links.map((link)=>(
           <Link to={link?.link} onClick={()=> settoogle(false)} key={link?.name}>{link?.name}</Link>
