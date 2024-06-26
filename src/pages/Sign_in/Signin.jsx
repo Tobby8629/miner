@@ -9,6 +9,7 @@ const Signin = () => {
   const [visible, setvisible] = useState(false)
   const navigate = useNavigate()
   const [login,setlogin] = useState({email: '', password:''})
+  const [loading, setloading] = useState(false);
   const [loggedIn, {data: logged, isLoading, error }] = useLoginUserMutation(login)
   const handleForm = (e) => {
     console.log(login)
@@ -18,11 +19,11 @@ const Signin = () => {
 
   const Submit = async (e) => {
     e.preventDefault()
+    setloading(true)
     try {
-      await loggedIn(login).unwrap()
-      console.log(logged)
-      await logged && navigate("/", {replace: true});
-      await logged && sessionStorage.setItem("user", logged?.data)
+      const result = await loggedIn(login).unwrap()
+      setloading(false)
+      await result?.status && navigate("/", {replace: true});sessionStorage.setItem("user", result?.token)
     }
     catch (e) {
       console.log(e);

@@ -16,6 +16,8 @@ export const benefit = [
     {title: "Transparent Operations", details: "At Crypto Gland, transparency is paramount. We offer clear reporting on hash rates, mining rewards, costs, and energy usage, demonstrating our commitment to openness and accountability in all operations"},
     {title: "Sustainable and Eco-Friendly Practices", details: "CryptoGland embraces sustainability with renewable energy, energy-efficient hardware, and carbon footprint reduction, affirming our commitment to eco-friendly practices within the crypto industry."}
 ]
+
+
 // export const procedures = [
 //     {title: "Registration", desc: `To embark on the journey of unlocking 
 //       your digital wealth, the initial step is to register at CryptoGland.

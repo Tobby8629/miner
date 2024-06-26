@@ -2,12 +2,17 @@ import React, { useState } from 'react'
 import style from './Sidebar.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 
 const Sidebar = () => {
   const [toggle, settoggle] = useState(false)
   const openbar = () => settoggle(true)
   const closebar = () => settoggle(false)
+  const navigate = useNavigate()
+  const signOut = () => {
+    sessionStorage.clear()
+    navigate('/login', {replace: true})
+  }
   return (
     <section className={style.sidebar}>
         <div className={style.flex}>
@@ -34,7 +39,7 @@ const Sidebar = () => {
           <li>
             <NavLink to='withdrawals' className="sides">Withdrawals</NavLink>
           </li>
-          <li>logout</li>
+          <li onClick={signOut}>logout</li>
         </ul>
         <button>
             <Link to='/'>Back to Homepage</Link>
