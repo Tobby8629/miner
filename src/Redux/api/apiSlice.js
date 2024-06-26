@@ -11,7 +11,7 @@ export const glandApi = createApi({
             url: '/getting-started',
             method: 'post',
             headers: {'Content-Type': 'application/json', accept: 'application/json'},
-            body: email
+            body: {email: email}
         })
       }),
       registerUser: builder.mutation({

@@ -9,7 +9,8 @@ const Header = () => {
   const navigatee = useNavigate()
  
    const [get_start, {data, isLoading, error}] = useGetStartedMutation();
-
+   const [result, setresult] = useState('')
+  
    const handleEmailChange = (e) => {
      setEmail(e.target.value);
    };
@@ -17,10 +18,16 @@ const Header = () => {
    const navigate = async (e) => {
      e.preventDefault();
      try {
-       await get_start(email).unwrap();
-       if (data && !isLoading && !error) {
-         navigatee('/registration', { state: { email }, replace: true });
-       } 
+       const resul = await get_start(email).unwrap();
+       console.log(resul?.message)
+       if (resul?.message?.includes("Proceed to sign up.")) {
+        //  navigatee('/registration', { state: { email }, replace: true });
+         setresult(resul?.message)
+       }
+      if(resul?.message?.includes("Already registered")){
+        setresult(resul?.message)
+        // navigatee('/login', {state:{ email }, replace: true})
+      }
      }
      catch (error) {
         console.error(error);
@@ -37,7 +44,7 @@ const Header = () => {
           <input type='email' placeholder='Enter your email address' value={email} onChange={handleEmailChange} />
           <Button />
         </form>
-          {error && <p style={{color: "red"}}>{error?.error}</p>}
+          {result && <p style={{color: "red"}}>{result}</p>}
       </header>
   )
 }
