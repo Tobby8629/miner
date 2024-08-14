@@ -49,7 +49,7 @@ const Navbar = () => {
           ))}
         </div>
         <button className={styles.btn}>
-          {checkUser ? 
+          {/* {checkUser ?  */}
           <Link className={styles.profile} to='/account/dashboard'>
             <span className={styles.initials}>
               <FontAwesomeIcon icon={faUserAlt} />
@@ -58,8 +58,8 @@ const Navbar = () => {
               <p>Lucas Boss</p>
             </span>
           </Link>
-         :  <Link to='/login'>Sign In</Link> 
-          }
+         {/* :  <Link to='/login'>Sign In</Link> 
+          } */}
         </button>
        </div>
     </nav>

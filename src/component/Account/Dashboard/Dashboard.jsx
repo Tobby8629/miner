@@ -7,9 +7,15 @@ import { faCopy, faEyeSlash } from '@fortawesome/free-regular-svg-icons'
 import Returns from './Returns'
 import { Link } from 'react-router-dom'
 import { faArrowLeft, faArrowRight, faChartColumn, faPlus, faUsers } from '@fortawesome/free-solid-svg-icons'
+import { useDashboardQuery } from '../../../Redux/api/apiSlice'
+import { sessionToken } from '../../Helpers/Helpers'
 
 
 const Dashboard = () => {
+  const token = sessionToken()
+  console.log(token)
+  const {data: dashboard, isLoading, error } = useDashboardQuery(token ,{skip: !token,});
+  console.log(dashboard)
   return (
     <section className={style.dashboard}>
       <h1> Welcome Back</h1>

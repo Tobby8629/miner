@@ -18,6 +18,20 @@ export const benefit = [
 ]
 
 
+export const sessionToken = () => {
+  const tokenString = sessionStorage.getItem('user');
+  if (!tokenString) {
+    return null;
+  }
+  try {
+    return tokenString;
+  } catch (error) {
+    console.error("Failed to parse token from sessionStorage:", error);
+    return null;
+  }
+};
+
+
 // export const procedures = [
 //     {title: "Registration", desc: `To embark on the journey of unlocking 
 //       your digital wealth, the initial step is to register at CryptoGland.
